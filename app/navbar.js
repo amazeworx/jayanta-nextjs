@@ -135,9 +135,65 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <a href='#' className='btn btn-ghost text-lg normal-case'>
-          Products
-        </a>
+        <div className='dropdown'>
+          <label tabIndex={0} className='btn btn-ghost text-lg normal-case'>
+            Products
+            <svg
+              class='fill-current ml-2'
+              xmlns='http://www.w3.org/2000/svg'
+              width='20'
+              height='20'
+              viewBox='0 0 24 24'
+            >
+              <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z'></path>
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className='dropdown-content menu p-2 bg-[#0B2347] rounded-box w-auto text-base'
+          >
+            <li>
+              <a
+                href='/products/threat-intelligence-platform'
+                className='whitespace-nowrap'
+              >
+                Threat Intelligence Platform
+              </a>
+            </li>
+            <li>
+              <a
+                href='/products/threat-intelligence-platform'
+                className='whitespace-nowrap'
+              >
+                Privileged Access Management (PAM)
+              </a>
+            </li>
+            <li>
+              <a
+                href='/products/threat-intelligence-platform'
+                className='whitespace-nowrap'
+              >
+                Platform Identity and Access Management (IAM)
+              </a>
+            </li>
+            <li>
+              <a
+                href='/products/threat-intelligence-platform'
+                className='whitespace-nowrap'
+              >
+                Security Operation Center (SOC)
+              </a>
+            </li>
+            <li>
+              <a
+                href='/products/threat-intelligence-platform'
+                className='whitespace-nowrap'
+              >
+                Mobile DevSecOps
+              </a>
+            </li>
+          </ul>
+        </div>
         <a href='#' className='btn btn-ghost text-lg normal-case'>
           Compliance
         </a>
