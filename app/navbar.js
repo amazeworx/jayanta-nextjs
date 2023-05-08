@@ -31,18 +31,108 @@ export default function Header() {
           </label>
           <div
             tabIndex={0}
-            className='dropdown-content menu p-2 shadow bg-base-100 rounded-box w-auto'
+            className='dropdown-content menu p-2 bg-[#0B2347] rounded-box w-auto'
           >
-            <ul>
-              <li>
-                <a
-                  href='/services/penetration-testing'
-                  className='whitespace-nowrap'
-                >
-                  Penetration Testing
-                </a>
-              </li>
-            </ul>
+            <div className='flex gap-x-6 w-auto'>
+              <div className=''>
+                <label className='block px-4 py-3 font-bold'>Safeguard</label>
+                <ul className='columns-2 text-base'>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Penetration Testing
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Cyber Threat Intelligence
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Breach and Attack Simulation
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Vulnerability Assessment
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Dark Web Monitoring
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Cyber Policy Review
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Compliance Advisory
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Ransomware Preparedness
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className=''>
+                <label className='block px-4 py-3 font-bold'>Counter</label>
+                <ul className='text-base'>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Incident Response Handling
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Digital Forensic
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='/services/penetration-testing'
+                      className='whitespace-nowrap'
+                    >
+                      Litigation Support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <a href='#' className='btn btn-ghost text-lg normal-case'>

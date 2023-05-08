@@ -22,7 +22,7 @@ export default function Footer() {
                 target='_blank'
                 className='inline-block text-white bg-gradient-to-r from-red-600 to-blue-900 hover:from-red-600 hover:to-blue-500 focus:ring-4 focus:ring-indigo-700 font-medium rounded-lg text-xl px-10 py-4 mr-2 mb-2 focus:outline-none transition duration-300'
               >
-                Let's Discuss
+                Let&lsquo;s Discuss
               </a>
             </div>
             <div className='mt-32 lg:mt-28 2xl:mt-40 text-center lg:text-left'>
