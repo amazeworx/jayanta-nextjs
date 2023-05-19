@@ -55,7 +55,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/breach-attack-simulation'
                       className='whitespace-nowrap'
                     >
                       Breach and Attack Simulation
@@ -63,7 +63,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/vulnerability-assessment'
                       className='whitespace-nowrap'
                     >
                       Vulnerability Assessment
@@ -71,7 +71,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/dark-web-monitoring'
                       className='whitespace-nowrap'
                     >
                       Dark Web Monitoring
@@ -108,7 +108,7 @@ export default function Header() {
                 <ul className='text-base'>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/incident-response-handling'
                       className='whitespace-nowrap'
                     >
                       Incident Response Handling
@@ -116,7 +116,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/digital-forensic'
                       className='whitespace-nowrap'
                     >
                       Digital Forensic
@@ -124,7 +124,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/litigation-support'
                       className='whitespace-nowrap'
                     >
                       Litigation Support
