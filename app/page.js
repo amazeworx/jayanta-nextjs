@@ -69,35 +69,35 @@ export default function Home() {
 
   const products = [
     {
-      icon: '/images/icons/penetration-testing.png',
+      icon: '/images/products/recordedfuture.svg',
       title: 'Recorded Future',
       description:
         'Platform Threat Intelligence yang membantu Anda mengidentifikasi, memahami, dan mengurangi ancaman siber secara real-time dengan informasi ancaman yang komprehensif dan relevan.',
       link: '',
     },
     {
-      icon: '/images/icons/penetration-testing.png',
+      icon: '/images/products/cyberark.svg',
       title: 'CyberArk',
       description:
         'Solusi Privileged Access Management (PAM) untuk melindungi dan mengelola akses ke akun dengan hak istimewa, mencegah penyalahgunaan dan mengurangi risiko kebocoran data.',
       link: '',
     },
     {
-      icon: '/images/icons/penetration-testing.png',
+      icon: '/images/products/sailpoint.svg',
       title: 'SailPoint',
       description:
         'Platform Identity and Access Management (IAM) yang memungkinkan perusahaan untuk mengelola akses pengguna, mengotomatisasi proses-proses terkait, dan memastikan kepatuhan terhadap kebijakan keamanan.',
       link: '',
     },
     {
-      icon: '/images/icons/penetration-testing.png',
+      icon: '/images/products/logrythm.svg',
       title: 'LogRhythm',
       description:
         'Security Operation Center (SOC) yang menyediakan alat dan layanan untuk mendeteksi, menganalisis, dan merespon insiden keamanan secara real-time, melindungi organisasi Anda dari ancaman siber yang terus berkembang.',
       link: '',
     },
     {
-      icon: '/images/icons/penetration-testing.png',
+      icon: '/images/products/appdome.svg',
       title: 'AppDome',
       description:
         'Platform Mobile DevSecOps yang memungkinkan integrasi keamanan, mobilitas, dan fungsi lainnya ke dalam aplikasi seluler tanpa perlu mengubah kode sumber.',
@@ -124,7 +124,7 @@ export default function Home() {
             </div>
             <div className='w-full order-1 lg:order-2 lg:w-1/2 relative z-10'>
               <div className='2xl:max-w-[680px]'>
-                <h2 className='text-4xl lg:text-5xl/tight font-bold'>
+                <h2 className='text-4xl lg:text-[2.75rem]/tight font-bold'>
                   Solusi keamanan siber yang inovatif dan terpercaya untuk
                   melindungi bisnis Anda
                 </h2>
@@ -149,10 +149,10 @@ export default function Home() {
       <section className='pt-4 pb-0 lg:pt-8 lg:pb-24 relative z-10'>
         <div className='container'>
           <div className='mx-auto text-center'>
-            <h2 className='text-4xl lg:text-5xl text-white font-bold mb-4'>
+            <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
               Layanan Kami
             </h2>
-            <p className='text-base lg:text-2xl text-white mx-auto'>
+            <p className='text-base lg:text-xl text-white mx-auto'>
               Kami menyediakan rangkaian layanan keamanan siber yang mencakup
             </p>
           </div>
@@ -173,10 +173,10 @@ export default function Home() {
                       priority
                     />
                   </div>
-                  <h3 className='text-3xl mb-4 font-semibold text-cyan-400'>
+                  <h3 className='text-2xl mb-4 font-bold text-cyan-400'>
                     {item.title}
                   </h3>
-                  <div className='text-base text-white/60'>
+                  <div className='text-base text-white/70'>
                     {item.description}
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function Home() {
       <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10'>
         <div className='container'>
           <div className='mx-auto text-center'>
-            <h2 className='text-4xl lg:text-5xl text-white font-bold mb-4'>
+            <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
               Produk Unggulan Kami
             </h2>
           </div>
@@ -195,19 +195,29 @@ export default function Home() {
             {products &&
               products.map((item, i) => (
                 <div
-                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:p-6 text-white'
+                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:py-8 lg:px-8 text-white'
                   key={i}
                 >
-                  <h3 className='text-3xl mb-4 font-bold text-cyan-400'>
+                  <div className='mb-6'>
+                    <Image
+                      src={item.icon}
+                      alt='{item.title}'
+                      className='w-auto h-12'
+                      width={128}
+                      height={128}
+                      priority
+                    />
+                  </div>
+                  <h3 className='text-3xl mb-4 font-bold text-cyan-400 hidden'>
                     {item.title}
                   </h3>
-                  <div className='text-base text-white/80'>
+                  <div className='text-[15px] leading-snug text-white/80'>
                     {item.description}
                   </div>
                 </div>
               ))}
           </div>
-          <div className='prose prose-lg max-w-screen-lg text-center text-white mx-auto mt-12 lg:mt-16'>
+          <div className='prose prose-lg max-w-screen-md text-center text-white mx-auto mt-12 lg:mt-16'>
             <p>
               Dengan menggunakan layanan kami dan produk unggulan ini, Anda akan
               mendapatkan manfaat seperti perlindungan yang lebih baik terhadap
@@ -223,7 +233,7 @@ export default function Home() {
         <div className='container py-12 mx-auto'>
           <div className='grid gap-4 xl:gap-8 xl:grid-cols-5'>
             <div className='max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left'>
-              <h2 className='text-4xl font-bold mb-4 mt-16'>
+              <h2 className='text-4xl lg:text-[2.5rem] font-bold mb-4 mt-16 lg:mb-8'>
                 Mengapa Memilih Kami?
               </h2>
               <div className='flex flex-col gap-y-3'>

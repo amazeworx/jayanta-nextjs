@@ -1,9 +1,15 @@
 import './globals.css';
-import { Barlow } from 'next/font/google';
+import { Barlow, Inter } from 'next/font/google';
 import Navbar from './navbar';
 import Footer from './footer';
 
 const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '900'],
+  display: 'swap',
+});
+
+const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '900'],
   display: 'swap',
@@ -20,8 +26,8 @@ export default function RootLayout({ children }) {
     <html lang='id'>
       <body
         className={
-          barlow.className +
-          ' scroll-smooth bg-brand-bluedark text-white text-lg antialiased'
+          inter.className +
+          ' scroll-smooth bg-brand-bluenight text-white text-lg antialiased'
         }
       >
         <Navbar />

@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.checklist-ul {
+  list-style-type: none;
+  padding: 0;
+  li {
+    padding: 0 0 0 1.5555556em;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0px;
+      content: '\2713';
+    }
+  }
+}

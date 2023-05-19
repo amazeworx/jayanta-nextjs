@@ -20,7 +20,7 @@ export default function Header() {
           <label tabIndex={0} className='btn btn-ghost text-lg normal-case'>
             Services
             <svg
-              class='fill-current ml-2'
+              className='fill-current ml-2'
               xmlns='http://www.w3.org/2000/svg'
               width='20'
               height='20'
@@ -47,7 +47,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/cyber-threat-intelligence'
                       className='whitespace-nowrap'
                     >
                       Cyber Threat Intelligence
@@ -79,7 +79,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/cyber-policy-review'
                       className='whitespace-nowrap'
                     >
                       Cyber Policy Review
@@ -87,7 +87,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/compliance-advisory'
                       className='whitespace-nowrap'
                     >
                       Compliance Advisory
@@ -95,7 +95,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href='/services/penetration-testing'
+                      href='/services/ransomware-preparedness'
                       className='whitespace-nowrap'
                     >
                       Ransomware Preparedness
@@ -139,7 +139,7 @@ export default function Header() {
           <label tabIndex={0} className='btn btn-ghost text-lg normal-case'>
             Products
             <svg
-              class='fill-current ml-2'
+              className='fill-current ml-2'
               xmlns='http://www.w3.org/2000/svg'
               width='20'
               height='20'
@@ -194,10 +194,39 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <a href='#' className='btn btn-ghost text-lg normal-case'>
-          Compliance
-        </a>
-        <a href='#' className='btn btn-ghost text-lg normal-case'>
+        <div className='dropdown'>
+          <label tabIndex={0} className='btn btn-ghost text-lg normal-case'>
+            Compliance
+            <svg
+              className='fill-current ml-2'
+              xmlns='http://www.w3.org/2000/svg'
+              width='20'
+              height='20'
+              viewBox='0 0 24 24'
+            >
+              <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z'></path>
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className='dropdown-content menu p-2 bg-[#0B2347] rounded-box w-auto text-base'
+          >
+            <li>
+              <a href='/compliance/iso-27001' className='whitespace-nowrap'>
+                ISO 27001
+              </a>
+            </li>
+            <li>
+              <a
+                href='/compliance/se-ojk-no-29-03-2002'
+                className='whitespace-nowrap'
+              >
+                SE OJK No. 29 03/2002
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href='/about' className='btn btn-ghost text-lg normal-case'>
           About
         </a>
       </div>

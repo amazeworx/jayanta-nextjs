@@ -1,5 +1,4 @@
 import Image from 'next/image';
-// import IntroText from '../../components/intro-text';
 
 export default function PenTest() {
   const services = [
@@ -114,110 +113,6 @@ export default function PenTest() {
     },
   ];
 
-  const vulnerabilities = [
-    {
-      title: 'Kesalahan Pemrograman',
-      description:
-        '<p>Kesalahan dalam kode sumber aplikasi atau sistem operasi dapat menghasilkan kerentanan yang dapat dieksploitasi oleh peretas. Contoh umum termasuk buffer overflow, cross-site scripting (XSS), dan injection attacks (seperti SQL injection).</p>',
-    },
-    {
-      title: 'Konfigurasi yang Tidak Aman',
-      description:
-        '<p>Pengaturan sistem yang tidak aman atau default yang tidak diubah dapat menyebabkan kerentanan. Contoh meliputi penggunaan protokol yang tidak aman, password default, atau akses yang tidak dibatasi.</p>',
-    },
-    {
-      title: 'Kekurangan Keamanan Protokol',
-      description:
-        '<p>Beberapa protokol komunikasi memiliki kelemahan yang diketahui yang dapat dieksploitasi oleh peretas. Contoh meliputi SSL/TLS yang rentan terhadap serangan "man-in-the-middle", atau protokol Wi-Fi yang rentan terhadap "cracking".</p>',
-    },
-    {
-      title: 'Perangkat Lunak Usang',
-      description:
-        '<p>Perangkat lunak yang tidak diperbarui atau tidak lagi didukung oleh pembuatnya dapat mengandung kerentanan yang diketahui dan tidak akan diperbaiki. Peretas sering menargetkan perangkat lunak yang ketinggalan zaman untuk mengeksploitasi celah keamanan ini.</p>',
-    },
-    {
-      title: 'Kelemahan Fisik',
-      description:
-        '<p>Keamanan fisik yang tidak memadai, seperti kontrol akses yang lemah atau pengawasan yang tidak efektif, dapat menciptakan peluang bagi peretas untuk mendapatkan akses langsung ke sistem atau perangkat.</p>',
-    },
-    {
-      title: 'Kesalahan Manusia',
-      description:
-        '<p>Kesalahan yang dilakukan oleh pengguna atau administrator sistem dapat menyebabkan kerentanan keamanan. Contoh meliputi penggunaan password yang lemah, pengungkapan informasi yang tidak sengaja, atau instalasi perangkat lunak yang tidak aman.</p>',
-    },
-  ];
-
-  const methodology = [
-    {
-      title: 'Pra-penilaian',
-      description:
-        '<p>Kami akan bekerja sama dengan Anda untuk menentukan cakupan dan tujuan penetrasi testing, serta mengumpulkan informasi awal yang relevan tentang sistem Anda.</p>',
-    },
-    {
-      title: 'Penilaian risiko',
-      description:
-        '<p>Tim kami akan melakukan penilaian risiko awal untuk mengidentifikasi area yang paling rentan dan memprioritaskan tes yang akan dilakukan.</p>',
-    },
-    {
-      title: 'Pengujian',
-      description:
-        '<p>Kami akan melakukan serangkaian tes penetrasi, termasuk pemindaian kerentanan, serangan injeksi, pengujian autentikasi dan otorisasi, pengujian manajemen sesi, dan evaluasi konfigurasi keamanan.</p>',
-    },
-    {
-      title: 'Analisis dan eksploitasi',
-      description:
-        '<p>Setelah mengidentifikasi kerentanan, tim kami akan mencoba mengeksploitasi celah keamanan untuk menguji sejauh mana potensi kerugian yang mungkin terjadi.</p>',
-    },
-    {
-      title: 'Pelaporan',
-      description:
-        '<p>Anda akan menerima laporan rinci yang mencakup temuan kami, analisis risiko, dan rekomendasi praktis untuk mengatasi kerentanan yang ditemukan.</p>',
-    },
-    {
-      title: 'Mitigasi',
-      description:
-        '<p>Setelah Anda mengimplementasikan rekomendasi yang disarankan, kami akan melakukan pengujian ulang untuk memastikan bahwa semua kerentanan telah diatasi dengan benar dan keamanan sistem Anda telah ditingkatkan.</p>',
-    },
-  ];
-
-  const reporting = [
-    {
-      title: 'Ringkasan Eksekutif',
-      description:
-        '<p>Sebuah ikhtisar singkat tentang tujuan pengujian, metodologi yang digunakan, temuan utama, dan tingkat risiko yang terkait dengan setiap kerentanan yang ditemukan. Ringkasan eksekutif ini ditujukan untuk manajemen dan pemangku kepentingan non-teknis.</p>',
-    },
-    {
-      title: 'Daftar Kerentanan',
-      description:
-        '<p>Sebuah daftar lengkap kerentanan yang diidentifikasi selama pentest, termasuk informasi tentang lokasi, tingkat risiko, dan dampak potensial dari setiap kerentanan.</p>',
-    },
-    {
-      title: 'Analisis Risiko',
-      description:
-        '<p>Sebuah penilaian terperinci tentang risiko yang terkait dengan setiap kerentanan yang ditemukan, serta potensi dampaknya pada organisasi atau sistem yang diuji. Analisis risiko ini membantu tim keamanan dan manajemen dalam menentukan prioritas tindakan perbaikan.</p>',
-    },
-    {
-      title: 'Deskripsi Teknis',
-      description:
-        '<p>Penjelasan rinci tentang setiap kerentanan yang diidentifikasi, termasuk bagaimana kerentanan itu ditemukan, cara kerjanya, dan bagaimana peretas dapat mengeksploitasi celah tersebut. Deskripsi teknis ini ditujukan untuk tim teknis yang akan bekerja pada mitigasi kerentanan.</p>',
-    },
-    {
-      title: 'Bukti Penyusupan',
-      description:
-        '<p>Jika eksploitasi berhasil dilakukan selama pengujian, laporan pentest akan mencakup bukti penyusupan, seperti tangkapan layar, log, atau informasi lain yang menunjukkan bagaimana peretas dapat mengakses sistem.</p>',
-    },
-    {
-      title: 'Rekomendasi',
-      description:
-        '<p>Laporan pentest harus mencakup rekomendasi praktis tentang cara mengatasi setiap kerentanan yang diidentifikasi. Rekomendasi ini harus disesuaikan dengan lingkungan yang diuji dan harus mencakup langkah-langkah spesifik yang dapat diambil untuk mengurangi risiko yang terkait dengan setiap kerentanan.</p>',
-    },
-    {
-      title: 'Tindak Lanjut',
-      description:
-        '<p>Sebuah bagian yang mencakup informasi tentang bagaimana melanjutkan setelah pentest, termasuk kapan dan bagaimana melakukan pengujian ulang, serta saran untuk meningkatkan keamanan secara keseluruhan.</p>',
-    },
-  ];
-
   const faqs = [
     {
       title: 'Mengapa pentest penting?',
@@ -258,7 +153,7 @@ export default function PenTest() {
 
   return (
     <>
-      <section className='relative pt-24 pb-16 min-h-[360px]'>
+      <section className='relative py-24 min-h-[360px]'>
         <Image
           src='/images/bg-banner.jpg'
           alt='Header'
@@ -267,7 +162,7 @@ export default function PenTest() {
           height={1008}
           priority
         />
-        <div className='absolute inset-0 bg-gradient-to-t from-brand-bluenight from-0% via-brand-bluenight/50 via-50% to-transparent'></div>
+        <div className='absolute inset-0 bg-gradient-to-t from-[#091D42] from-0% via-[#091D42]/50 via-50% to-transparent'></div>
         <div className='relative z-10 mt-16'>
           <div className='container max-w-screen-xl'>
             <div className='flex gap-16'>
@@ -292,7 +187,7 @@ export default function PenTest() {
                 <Image
                   src='/images/content/security-badge.png'
                   alt='Security'
-                  className='rounded-xl'
+                  className='rounded-xl max-w-[420px]'
                   width={543}
                   height={543}
                   priority
@@ -301,15 +196,102 @@ export default function PenTest() {
             </div>
           </div>
         </div>
+        <div className='relative z-10 mt-16'>
+          <div className='container text-center text-white'>
+            <h1 className='text-5xl font-bold'>Penetration Testing</h1>
+            <p className='text-2xl mt-4'>
+              Jamin Keamanan Sistem Anda dan Lindungi Aset Digital Anda
+            </p>
+          </div>
+        </div>
       </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+      {/* <section className='relative py-24 min-h-[360px]'>
+        <Image
+          src='/images/bg-banner.jpg'
+          alt='Header'
+          className='absolute inset-0 object-cover object-bottom h-full w-full'
+          width={1512}
+          height={1008}
+          priority
+        />
+        <div className='absolute inset-0 bg-gradient-to-t from-[#091D42] from-0% via-[#091D42]/50 via-50% to-transparent'></div>
+        <div className='relative z-10 mt-16'>
+          <div className='container text-center text-white'>
+            <h1 className='text-5xl font-bold'>Penetration Testing</h1>
+            <p className='text-2xl mt-4'>
+              Jamin Keamanan Sistem Anda dan Lindungi Aset Digital Anda
+            </p>
+          </div>
+        </div>
+      </section> */}
+      {/* <section className='py-20'>
+        <div className='container'>
+          <div className='flex gap-x-12'>
+            <div className='w-1/2'>
+              <h2 className='text-4xl font-bold mb-6'>
+                Layanan profesional untuk mengidentifikasi dan mengatasi
+                kerentanan keamanan di sistem, aplikasi, dan situs web Anda
+              </h2>
+            </div>
+            <div className='w-1/2'>
+              <p>
+                Di era digital saat ini, keamanan sistem informasi dan
+                infrastruktur IT menjadi sangat penting. Ancaman keamanan siber
+                yang terus berkembang mengharuskan perusahaan dan individu untuk
+                melindungi aset digital mereka. Layanan penetrasi testing kami
+                dirancang untuk membantu Anda mengungkap kerentanan keamanan,
+                melindungi data sensitif, dan memastikan kepatuhan terhadap
+                standar industri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section className='bg-[#091D42]'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
-            <h2 className='text-4xl font-bold mb-6'>
-              Apa itu Penetration Testing?
-            </h2>
-            <div className='prose prose-lg max-w-none text-white'>
+          <div className='relative pl-60'>
+            <div className='absolute left-0 top-1/2 -translate-y-1/2'>
+              <Image
+                src='/images/content/security-badge.png'
+                alt='Security'
+                className='rounded-xl max-w-[420px]'
+                width={543}
+                height={543}
+                priority
+              />
+            </div>
+            <div className='bg-black/20 rounded-xl p-20 pl-60'>
+              <h2 className='text-4xl font-bold mb-6'>
+                Apa itu Penetration Testing?
+              </h2>
+              <div className='prose prose-lg max-w-none text-white'>
+                <p>
+                  Penetration testing, atau pentesting, adalah metode evaluasi
+                  keamanan siber yang etis yang bertujuan untuk menemukan,
+                  mengeksploitasi dengan aman, dan membantu memperbaiki
+                  kerentanan di sistem komputer, aplikasi, dan situs web. Dengan
+                  menggunakan alat dan teknik yang sama dengan yang digunakan
+                  oleh peretas, pentesting mensimulasikan kondisi serangan
+                  nyata.
+                </p>
+                <p>
+                  Menggunakan layanan penetrasi testing memungkinkan organisasi
+                  untuk mengurangi risiko keamanan dan meningkatkan kepercayaan
+                  diri dalam keamanan infrastruktur IT mereka, dengan mengatasi
+                  kelemahan sebelum dapat dieksploitasi secara jahat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className='pt-20 pb-0 bg-[#091D42]'>
+        <div className='container'>
+          <h2 className='text-4xl font-bold mb-6'>
+            Apa itu Penetration Testing?
+          </h2>
+          <div>
+            <div className='columns-2 gap-12 prose prose-lg max-w-none text-white'>
               <p>
                 Penetration testing, atau pentesting, adalah metode evaluasi
                 keamanan siber yang etis yang bertujuan untuk menemukan,
@@ -327,12 +309,11 @@ export default function PenTest() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
-        <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
-            <div className='mb-10 max-w-prose'>
+      </section> */}
+      <section className='pt-4 pb-0 lg:pt-36 lg:pb-36 relative z-10 bg-[#091D42]'>
+        <div className='container'>
+          <div className='flex gap-x-16'>
+            <div className='w-2/5'>
               <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
                 Manfaat melakukan penetration testing
               </h2>
@@ -345,8 +326,8 @@ export default function PenTest() {
                 </p>
               </div>
             </div>
-            <div className=''>
-              <div className='flex flex-col gap-y-4'>
+            <div className='w-3/5'>
+              <div className='flex flex-col gap-y-3'>
                 {benefits &&
                   benefits.map((item, i) => (
                     <div
@@ -375,9 +356,7 @@ export default function PenTest() {
                       </div>
                       <div className='collapse-content px-6'>
                         <div
-                          dangerouslySetInnerHTML={{
-                            __html: item.description,
-                          }}
+                          dangerouslySetInnerHTML={{ __html: item.description }}
                         />
                       </div>
                     </div>
@@ -387,27 +366,25 @@ export default function PenTest() {
           </div>
         </div>
       </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
-        <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
-            <div className='mx-auto text-center'>
-              <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
-                Jenis layanan Pentest
-              </h2>
-              {/* <p className='text-base lg:text-2xl text-white mx-auto'>
+      <section className='pt-4 pb-0 lg:pt-0 lg:pb-24 relative z-10 bg-[#091D42]'>
+        <div className='container'>
+          <div className='mx-auto text-center'>
+            <h2 className='text-4xl lg:text-5xl text-white font-bold mb-4'>
+              Jenis layanan Pentest
+            </h2>
+            {/* <p className='text-base lg:text-2xl text-white mx-auto'>
               Berikut adalah beberapa manfaat penting dari melakukan penetrasi
               testing (pentest):
             </p> */}
-            </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6 mt-12 lg:mt-16'>
-              {services &&
-                services.map((item, i) => (
-                  <div
-                    className='bg-[#0B2347] border border-solid border-[#ffffff1a] rounded-xl p-6 lg:p-8 text-white'
-                    key={i}
-                  >
-                    {/* <div className='mb-4'>
+          </div>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 mt-12 lg:mt-16'>
+            {services &&
+              services.map((item, i) => (
+                <div
+                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:p-8 text-white'
+                  key={i}
+                >
+                  {/* <div className='mb-4'>
                     <Image
                       src={item.icon}
                       alt=''
@@ -417,185 +394,20 @@ export default function PenTest() {
                       priority
                     />
                   </div> */}
-                    <h3 className='text-2xl mb-4 font-bold text-cyan-400'>
-                      {item.title}
-                    </h3>
-                    <div className='text-base text-white/80'>
-                      {item.description}
-                    </div>
+                  <h3 className='text-3xl mb-4 font-bold text-cyan-400'>
+                    {item.title}
+                  </h3>
+                  <div className='text-lg text-white/80'>
+                    {item.description}
                   </div>
-                ))}
-            </div>
+                </div>
+              ))}
           </div>
         </div>
       </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
-        <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
-            <div className='mb-8'>
-              <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
-                Vulnerabilities
-              </h2>
-              <div className='prose prose-lg max-w-none text-white'>
-                <p>
-                  Kerentanan (vulnerabilities) adalah kelemahan dalam sistem,
-                  aplikasi, atau jaringan yang dapat dieksploitasi oleh peretas
-                  untuk mengakses atau mengendalikan sistem tersebut. Kerentanan
-                  dapat berasal dari berbagai sumber, seperti kesalahan dalam
-                  kode, konfigurasi yang tidak aman, atau kelemahan dalam
-                  protokol komunikasi.
-                </p>
-                <p>Berikut adalah beberapa contoh umum dari kerentanan:</p>
-              </div>
-            </div>
-            <div className='bg-[#0B2347] bg-black/20 rounded-xl p-6 lg:p-10 text-white -mx-10'>
-              <div className='grid grid-cols-2 gap-6 lg:gap-10'>
-                {vulnerabilities &&
-                  vulnerabilities.map((item, i) => (
-                    <div
-                      className='pb-6 text-white border-b border-white/10'
-                      key={i}
-                    >
-                      <h3 className='text-2xl mb-3 font-bold text-cyan-400'>
-                        {item.title}
-                      </h3>
-                      <div className='text-base text-white/80'>
-                        <div
-                          dangerouslySetInnerHTML={{ __html: item.description }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            </div>
-            <div className='mt-8'>
-              <div className='prose prose-lg max-w-none text-white'>
-                <p>
-                  Mengidentifikasi dan mengatasi kerentanan adalah langkah
-                  penting dalam melindungi sistem, aplikasi, dan jaringan dari
-                  ancaman keamanan siber. Pentest, pemindaian kerentanan, dan
-                  proses manajemen risiko yang efektif adalah bagian penting
-                  dalam menjaga keamanan infrastruktur TI dan melindungi aset
-                  digital Anda.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
-        <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
-            <div className='mb-8'>
-              <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
-                Metodologi Penetration Testing
-              </h2>
-              <div className='prose prose-lg max-w-none text-white'>
-                <p>
-                  Kami menggunakan metodologi penetrasi testing yang terstruktur
-                  dan komprehensif, yang meliputi langkah-langkah berikut:
-                </p>
-              </div>
-            </div>
-            <div className='bg-[#0B2347] bg-black/20 rounded-xl p-6 lg:p-10 text-white -mx-10'>
-              <div className='grid grid-cols-2 gap-6 lg:gap-10'>
-                {methodology &&
-                  methodology.map((item, i) => (
-                    <div
-                      className='pb-6 text-white border-b border-white/10'
-                      key={i}
-                    >
-                      <h3 className='text-2xl mb-3 font-bold text-cyan-400'>
-                        {item.title}
-                      </h3>
-                      <div className='text-base text-white/80'>
-                        <div
-                          dangerouslySetInnerHTML={{ __html: item.description }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            </div>
-            {/* <div className='mt-8'>
-              <div className='prose prose-lg max-w-none text-white'>
-                <p>
-                  Mengidentifikasi dan mengatasi kerentanan adalah langkah
-                  penting dalam melindungi sistem, aplikasi, dan jaringan dari
-                  ancaman keamanan siber. Pentest, pemindaian kerentanan, dan
-                  proses manajemen risiko yang efektif adalah bagian penting
-                  dalam menjaga keamanan infrastruktur TI dan melindungi aset
-                  digital Anda.
-                </p>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
-        <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
-            <div className='mb-8'>
-              <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
-                Pelaporan
-              </h2>
-              <div className='prose prose-lg max-w-none text-white'>
-                <p>
-                  Pelaporan adalah tahap penting dalam proses pentest, karena
-                  menyediakan informasi rinci tentang temuan, analisis risiko,
-                  dan rekomendasi untuk mengatasi kerentanan yang ditemukan.
-                  Laporan pentest harus disusun dengan cara yang jelas, mudah
-                  dipahami, dan dapat digunakan oleh berbagai pemangku
-                  kepentingan, mulai dari tim teknis hingga manajemen eksekutif.
-                </p>
-                <p>
-                  Berikut adalah beberapa elemen penting yang umumnya termasuk
-                  dalam laporan pentest:
-                </p>
-              </div>
-            </div>
-            <div className='bg-[#0B2347] bg-black/20 rounded-xl p-6 lg:p-10 text-white -mx-10'>
-              <div className='grid grid-cols-2 gap-6 lg:gap-10'>
-                {reporting &&
-                  reporting.map((item, i) => (
-                    <div
-                      className='pb-6 text-white border-b border-white/10'
-                      key={i}
-                    >
-                      <h3 className='text-2xl mb-3 font-bold text-cyan-400'>
-                        {item.title}
-                      </h3>
-                      <div className='text-base text-white/80'>
-                        <div
-                          dangerouslySetInnerHTML={{ __html: item.description }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            </div>
-            <div className='mt-8'>
-              <div className='prose prose-lg max-w-none text-white'>
-                <p>
-                  Laporan pentest harus disampaikan kepada klien dalam format
-                  yang aman, seperti melalui portal klien yang aman atau melalui
-                  enkripsi email. Setelah laporan diserahkan, pentester biasanya
-                  akan bekerja sama dengan klien untuk membahas temuan, menjawab
-                  pertanyaan, dan memberikan dukungan dalam mengatasi kerentanan
-                  yang diidentifikasi.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
-        <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
+      <section className='pt-4 pb-0 lg:pt-20 lg:pb-36 relative z-10 bg-[#091D42]'>
+        <div className='container'>
+          <div className='max-w-screen-md mx-auto'>
             <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-8'>
               FAQ Pentest
             </h2>

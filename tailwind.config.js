@@ -28,6 +28,7 @@ module.exports = {
         brand: {
           bluedark: '#001530',
           bluelight: '#2D9AE8',
+          bluenight: '#091D42',
           red: '#DA3233',
         },
         primary: '#FF7A00',
