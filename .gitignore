@@ -33,3 +33,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+app/products/threat-intelligence-platform/v1.js
+app/services/penetration-testing/v1.js
