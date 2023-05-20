@@ -146,7 +146,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-8 lg:pb-24 relative z-10'>
+
+      <section className='pt-4 pb-0 lg:pt-8 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
           <div className='mx-auto text-center'>
             <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
@@ -184,7 +185,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10'>
+
+      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
           <div className='mx-auto text-center'>
             <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
@@ -229,7 +231,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-transparent to-[#091D42]'>
+
+      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-brand-bluedark to-brand-bluenight'>
         <div className='container py-12 mx-auto'>
           <div className='grid gap-4 xl:gap-8 xl:grid-cols-5'>
             <div className='max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left'>

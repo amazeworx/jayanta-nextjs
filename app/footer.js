@@ -29,9 +29,9 @@ export default function Footer() {
               <Image
                 src='/images/logo-jayanta.svg'
                 alt='Jayanta'
-                className='h-12 lg:h-12 w-auto'
-                width={724}
-                height={142}
+                className='h-12 lg:h-16 w-auto'
+                width={800}
+                height={254}
                 priority
               />
               <div className='text-white mt-4 text-lg'>

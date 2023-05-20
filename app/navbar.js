@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <div className='flex px-4 py-4 bg-black sticky top-0 z-50 justify-between'>
+    <div className='flex px-4 py-4 bg-brand-bluedark sticky top-0 z-50 justify-between items-center'>
       <div className=''>
         <a href='/' className='text-4xl font-bold'>
           <Image
             src='/images/logo-jayanta.svg'
             alt='Jayanta'
-            className='h-12 lg:h-14 w-auto'
-            width={724}
-            height={142}
+            className='h-12 lg:h-[72px] w-auto'
+            width={800}
+            height={254}
             priority
           />
         </a>
