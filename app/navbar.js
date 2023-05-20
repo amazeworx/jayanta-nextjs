@@ -162,7 +162,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href='/products/threat-intelligence-platform'
+                href='/products/privileged-access-management'
                 className='whitespace-nowrap'
               >
                 Privileged Access Management (PAM)
@@ -170,7 +170,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href='/products/threat-intelligence-platform'
+                href='/products/platform-identity-and-access-management'
                 className='whitespace-nowrap'
               >
                 Platform Identity and Access Management (IAM)
@@ -178,7 +178,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href='/products/threat-intelligence-platform'
+                href='/products/security-operation-center'
                 className='whitespace-nowrap'
               >
                 Security Operation Center (SOC)
@@ -186,7 +186,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href='/products/threat-intelligence-platform'
+                href='/products/mobile-devsecops'
                 className='whitespace-nowrap'
               >
                 Mobile DevSecOps
