@@ -142,11 +142,11 @@ export default function Iso27001() {
               </div>
               <div className='w-1/3'>
                 <div className='aspect-w-1 aspect-h-1'>
-                  <div className='w-full h-full rounded-xl bg-brand-bluenight object-cover'>
+                  <div className='w-full h-full rounded-xl bg-brand-bluenight p-8 flex items-center justify-center'>
                     <Image
-                      src='/images/content/security-badge.png'
-                      alt='Security'
-                      className='rounded-xl'
+                      src='/images/compliance/ojk.png'
+                      alt='OJK'
+                      className=''
                       width={543}
                       height={543}
                       priority

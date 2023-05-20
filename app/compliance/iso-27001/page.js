@@ -136,7 +136,7 @@ export default function Iso27001() {
         <div className='absolute inset-0 bg-gradient-to-t from-brand-bluenight from-0% via-brand-bluenight/50 via-50% to-transparent'></div>
         <div className='relative z-10 mt-16'>
           <div className='container max-w-screen-xl'>
-            <div className='flex gap-16'>
+            <div className='flex gap-20'>
               <div className='w-2/3'>
                 <h3 className='mb-4'>LAYANAN KONSULTASI</h3>
                 <h1 className='text-5xl/snug font-bold mb-6'>
@@ -156,11 +156,11 @@ export default function Iso27001() {
               </div>
               <div className='w-1/3'>
                 <div className='aspect-w-1 aspect-h-1'>
-                  <div className='w-full h-full rounded-xl bg-brand-bluenight object-cover'>
+                  <div className='w-full h-full rounded-xl bg-brand-bluenight p-8 flex items-center justify-center'>
                     <Image
-                      src='/images/content/security-badge.png'
-                      alt='Security'
-                      className='rounded-xl'
+                      src='/images/compliance/iso-27001.png'
+                      alt='ISO 27001'
+                      className=''
                       width={543}
                       height={543}
                       priority

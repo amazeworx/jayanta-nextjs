@@ -24,7 +24,7 @@ export default function Home() {
       link: '',
     },
     {
-      icon: '/images/icons/incident-report-handling.png',
+      icon: '/images/icons/incident-response-handling.png',
       title: 'Incident Response Handling',
       description:
         'Serangkaian langkah yang diambil oleh tim keamanan siber untuk mengidentifikasi, mengatasi, dan memulihkan dari insiden keamanan siber. Tujuannya adalah untuk meminimalkan dampak insiden pada bisnis dan mencegah insiden serupa di masa depan.',

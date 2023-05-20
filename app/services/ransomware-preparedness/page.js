@@ -75,14 +75,18 @@ export default function RansomwarePreparedness() {
                 </p>
               </div>
               <div className='w-1/3'>
-                <Image
-                  src='/images/content/security-badge.png'
-                  alt='Security'
-                  className='rounded-xl'
-                  width={543}
-                  height={543}
-                  priority
-                />
+                <div className='aspect-w-1 aspect-h-1'>
+                  <div className='w-full h-full rounded-xl bg-brand-bluenight p-8 flex items-center justify-center'>
+                    <Image
+                      src='/images/icons/ransomware.png'
+                      alt='Ransomware Preparedness'
+                      className=''
+                      width={192}
+                      height={192}
+                      priority
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
