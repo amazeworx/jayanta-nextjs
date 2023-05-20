@@ -1,6 +1,12 @@
 import Image from 'next/image';
 
-export default function PenTest() {
+export const metadata = {
+  title: 'Konsultasi Pemenuhan Kepatuhan Sertifikasi ISO 27001 | Jayanta.id',
+  description:
+    'ISO 27001 adalah standar internasional yang menetapkan persyaratan untuk Sistem Manajemen Keamanan Informasi (ISMS).',
+};
+
+export default function Iso27001() {
   const services = [
     {
       icon: '/images/icons/penetration-testing.png',
@@ -118,7 +124,7 @@ export default function PenTest() {
 
   return (
     <>
-      <section className='relative py-24 min-h-[360px]'>
+      <section className='relative pt-24 pb-16 min-h-[360px]'>
         <Image
           src='/images/bg-banner.jpg'
           alt='Header'
@@ -127,66 +133,72 @@ export default function PenTest() {
           height={1008}
           priority
         />
-        <div className='absolute inset-0 bg-gradient-to-t from-[#091D42] from-0% via-[#091D42]/50 via-50% to-transparent'></div>
+        <div className='absolute inset-0 bg-gradient-to-t from-brand-bluenight from-0% via-brand-bluenight/50 via-50% to-transparent'></div>
         <div className='relative z-10 mt-16'>
-          <div className='container'>
-            <div className='max-w-screen-md text-white'>
-              <h1 className='text-5xl font-bold mb-6'>
-                Layanan Konsultasi Pemenuhan Kepatuhan Sertifikasi ISO 27001
-              </h1>
-              <p className='text-xl mt-4'>
-                ISO 27001 adalah standar internasional yang menetapkan
-                persyaratan untuk Sistem Manajemen Keamanan Informasi (ISMS).
-                Tujuannya adalah untuk membantu organisasi mengelola dan
-                melindungi informasi mereka dengan cara yang efisien dan
-                efektif. Dengan mencapai kepatuhan ISO 27001, organisasi Anda
-                akan menunjukkan komitmen yang kuat terhadap keamanan informasi,
-                meningkatkan reputasi di mata pelanggan, mitra, dan pemangku
-                kepentingan, serta mengurangi risiko pelanggaran data dan
-                insiden keamanan.
-              </p>
+          <div className='container max-w-screen-xl'>
+            <div className='flex gap-16'>
+              <div className='w-2/3'>
+                <h3 className='mb-4'>LAYANAN KONSULTASI</h3>
+                <h1 className='text-5xl/snug font-bold mb-6'>
+                  Pemenuhan Kepatuhan Sertifikasi ISO 27001
+                </h1>
+                <p className='text-lg mt-4'>
+                  ISO 27001 adalah standar internasional yang menetapkan
+                  persyaratan untuk Sistem Manajemen Keamanan Informasi (ISMS).
+                  Tujuannya adalah untuk membantu organisasi mengelola dan
+                  melindungi informasi mereka dengan cara yang efisien dan
+                  efektif. Dengan mencapai kepatuhan ISO 27001, organisasi Anda
+                  akan menunjukkan komitmen yang kuat terhadap keamanan
+                  informasi, meningkatkan reputasi di mata pelanggan, mitra, dan
+                  pemangku kepentingan, serta mengurangi risiko pelanggaran data
+                  dan insiden keamanan.
+                </p>
+              </div>
+              <div className='w-1/3'>
+                <div className='aspect-w-1 aspect-h-1'>
+                  <div className='w-full h-full rounded-xl bg-brand-bluenight object-cover'>
+                    <Image
+                      src='/images/content/security-badge.png'
+                      alt='Security'
+                      className='rounded-xl'
+                      width={543}
+                      height={543}
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-24 relative z-10 bg-[#091D42]'>
-        <div className='container'>
-          <div className=''>
-            <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
-              Layanan kami meliputi:
-            </h2>
-            {/* <p className='text-base lg:text-2xl text-white mx-auto'>
-              Berikut adalah beberapa manfaat penting dari melakukan penetrasi
-              testing (pentest):
-            </p> */}
-          </div>
-          <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 mt-12 lg:mt-10'>
-            {services &&
-              services.map((item, i) => (
-                <div
-                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:p-8 text-white'
-                  key={i}
-                >
-                  {/* <div className='mb-4'>
-                    <Image
-                      src={item.icon}
-                      alt=''
-                      className='w-16 h-auto'
-                      width={128}
-                      height={128}
-                      priority
-                    />
-                  </div> */}
-                  <h3 className='text-3xl mb-4 font-bold text-cyan-400'>
-                    {item.title}
-                  </h3>
-                  <div className='text-lg text-white/80'>
-                    {item.description}
+
+      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+        <div className='container max-w-screen-xl'>
+          <div className='bg-black/20 rounded-2xl p-20'>
+            <div className=''>
+              <h2 className='text-4xl/snug text-white font-bold mb-4'>
+                Layanan kami meliputi:
+              </h2>
+            </div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-6 mt-10'>
+              {services &&
+                services.map((item, i) => (
+                  <div
+                    className='bg-[#0B2347] border border-solid border-[#ffffff1a] rounded-xl p-6 lg:p-8 text-white'
+                    key={i}
+                  >
+                    <h3 className='text-2xl mb-4 font-bold text-cyan-400'>
+                      {item.title}
+                    </h3>
+                    <div className='text-base text-white/80'>
+                      {item.description}
+                    </div>
                   </div>
-                </div>
-              ))}
-            <div className='col-span-2 bg-black/20 p-8 rounded-xl flex items-center'>
-              <div className='text-xl'>
+                ))}
+            </div>
+            <div className='mt-8'>
+              <div className='prose prose-lg max-w-none text-white'>
                 <p>
                   Dengan mengandalkan layanan pemenuhan kepatuhan ISO 27001
                   kami, Anda akan mendapatkan dukungan yang komprehensif dan
@@ -203,14 +215,15 @@ export default function PenTest() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-36 lg:pb-36 relative z-10 bg-[#091D42]'>
-        <div className='container'>
-          <div className='flex gap-x-16'>
-            <div className='w-2/5'>
+
+      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+        <div className='container max-w-screen-xl'>
+          <div className='bg-black/20 rounded-2xl p-20'>
+            <div className='mb-8'>
               <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
                 Benefit dari sertifikasi ISO 27001 bagi perusahaan anda
               </h2>
-              <div className='prose prose-lg text-white'>
+              <div className='prose prose-lg max-w-none text-white'>
                 <p>
                   Meningkatkan kepercayaan pelanggan, mitra, dan pemangku
                   kepentingan: Menunjukkan kepatuhan terhadap standar keamanan
@@ -220,35 +233,18 @@ export default function PenTest() {
                 </p>
               </div>
             </div>
-            <div className='w-3/5'>
-              <div className='flex flex-col gap-y-3'>
+            <div className='bg-[#0B2347] bg-black/20 rounded-xl p-6 lg:p-10 text-white -mx-10'>
+              <div className='grid grid-cols-2 gap-6 lg:gap-10'>
                 {benefits &&
                   benefits.map((item, i) => (
                     <div
-                      tabIndex={0}
+                      className='pb-6 text-white border-b border-white/10'
                       key={i}
-                      className='collapse collapse-plus border border-[#0B2347] bg-[#0B2347] rounded-lg'
                     >
-                      <div className='collapse-title pl-6 text-xl font-bold text-cyan-400'>
-                        <div className='flex gap-x-2'>
-                          <svg
-                            className='text-cyan-400 mt-0.5'
-                            width='24'
-                            height='24'
-                            viewBox='0 0 24 24'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'
-                          >
-                            <path
-                              d='M10.6 13.8L8.45 11.65C8.26667 11.4667 8.03333 11.375 7.75 11.375C7.46667 11.375 7.23333 11.4667 7.05 11.65C6.86667 11.8333 6.775 12.0667 6.775 12.35C6.775 12.6333 6.86667 12.8667 7.05 13.05L9.9 15.9C10.1 16.1 10.3333 16.2 10.6 16.2C10.8667 16.2 11.1 16.1 11.3 15.9L16.95 10.25C17.1333 10.0667 17.225 9.83333 17.225 9.55C17.225 9.26667 17.1333 9.03333 16.95 8.85C16.7667 8.66667 16.5333 8.575 16.25 8.575C15.9667 8.575 15.7333 8.66667 15.55 8.85L10.6 13.8ZM12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6877 15.9 21.213C14.6833 21.7383 13.3833 22.0007 12 22Z'
-                              fill='currentColor'
-                            />
-                          </svg>
-
-                          <span>{item.title}</span>
-                        </div>
-                      </div>
-                      <div className='collapse-content px-6'>
+                      <h3 className='text-2xl mb-3 font-bold text-cyan-400'>
+                        {item.title}
+                      </h3>
+                      <div className='text-base text-white/80'>
                         <div
                           dangerouslySetInnerHTML={{ __html: item.description }}
                         />
@@ -260,13 +256,14 @@ export default function PenTest() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-20 lg:pb-36 relative z-10 bg-[#091D42]'>
-        <div className='container'>
-          <div className='max-w-screen-md mx-auto'>
-            <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-8'>
+
+      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+        <div className='container max-w-screen-xl'>
+          <div className='bg-black/20 rounded-2xl p-20'>
+            <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-12'>
               FAQ mengenai ISO 27001
             </h2>
-            <div className='flex flex-col gap-y-3'>
+            <div className='flex flex-col gap-y-4'>
               {faqs &&
                 faqs.map((item, i) => (
                   <div
@@ -290,20 +287,24 @@ export default function PenTest() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-20 lg:pb-36 relative z-10 bg-[#091D42]'>
-        <div className='container'>
-          <div className='prose prose-xl text-white mx-auto'>
-            <p>
-              Dalam menghadapi tantangan keamanan siber yang semakin kompleks,
-              layanan konsultasi pemenuhan kepatuhan ISO 27001 kami berkomitmen
-              untuk membantu organisasi Anda mengimplementasikan dan memelihara
-              sistem manajemen keamanan informasi yang efektif. Dengan dukungan
-              dari tim ahli kami, Anda akan meningkatkan perlindungan terhadap
-              ancaman siber, membangun kepercayaan dengan pelanggan dan mitra
-              bisnis, serta mencapai standar keamanan yang diakui secara
-              internasional. Hubungi kami hari ini untuk memulai perjalanan Anda
-              menuju kepatuhan ISO 27001 dan keamanan informasi yang lebih baik.
-            </p>
+
+      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+        <div className='container max-w-screen-xl'>
+          <div className='bg-black/20 rounded-2xl p-20'>
+            <div className='prose prose-lg max-w-none text-white'>
+              <p>
+                Dalam menghadapi tantangan keamanan siber yang semakin kompleks,
+                layanan konsultasi pemenuhan kepatuhan ISO 27001 kami
+                berkomitmen untuk membantu organisasi Anda mengimplementasikan
+                dan memelihara sistem manajemen keamanan informasi yang efektif.
+                Dengan dukungan dari tim ahli kami, Anda akan meningkatkan
+                perlindungan terhadap ancaman siber, membangun kepercayaan
+                dengan pelanggan dan mitra bisnis, serta mencapai standar
+                keamanan yang diakui secara internasional. Hubungi kami hari ini
+                untuk memulai perjalanan Anda menuju kepatuhan ISO 27001 dan
+                keamanan informasi yang lebih baik.
+              </p>
+            </div>
           </div>
         </div>
       </section>
