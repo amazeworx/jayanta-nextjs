@@ -90,7 +90,7 @@ export default function Home() {
       link: '',
     },
     {
-      icon: '/images/products/logrythm.svg',
+      icon: '/images/products/logrhytm.svg',
       title: 'LogRhythm',
       description:
         'Security Operation Center (SOC) yang menyediakan alat dan layanan untuk mendeteksi, menganalisis, dan merespon insiden keamanan secara real-time, melindungi organisasi Anda dari ancaman siber yang terus berkembang.',
