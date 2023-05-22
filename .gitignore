@@ -35,3 +35,4 @@ yarn-error.log*
 next-env.d.ts
 app/products/threat-intelligence-platform/v1.js
 app/services/penetration-testing/v1.js
+public/images/logo-jayanta-rev1.svg
