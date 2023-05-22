@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 
 export default function Home() {
@@ -107,11 +108,11 @@ export default function Home() {
 
   return (
     <>
-      <section className='lg:h-screen -mt-20 bg-brand-bluedark text-white flex items-center'>
-        <div className='container pt-6 lg:pt-16 pb-16'>
+      <section className='bg-brand-bluedark text-white flex items-center lg:min-h-screen lg:-mt-24'>
+        <div className='container pt-16'>
           <div className='flex flex-col lg:flex-row lg:items-center'>
             <div className='w-full order-2 lg:order-1 lg:w-1/2 relative z-0'>
-              <div className='-mx-24 -mt-16 lg:mt-0 lg:-mr-0 lg:-ml-16 xl:-ml-24 xl:pr-20'>
+              <div className='-mx-24 -mt-16 md:-mt-24 md:-mx-0 lg:mt-0 lg:-mr-0 lg:-ml-16 xl:-ml-24 xl:pr-20'>
                 <Image
                   src='/images/cyber-security.png'
                   alt='Cyber Security'
@@ -122,13 +123,13 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className='w-full order-1 lg:order-2 lg:w-1/2 relative z-10'>
-              <div className='2xl:max-w-[680px]'>
-                <h2 className='text-4xl lg:text-[2.75rem]/tight font-bold'>
+            <div className='w-full order-1 lg:order-2 lg:w-1/2 relative z-10 lg:-mx-12 xl:-mx-24'>
+              <div className='max-w-prose xl:max-w-none 2xl:max-w-[680px]'>
+                <h2 className='text-4xl md:text-[2.75rem]/tight lg:text-[2.5rem]/tight xl:text-[2.5rem]/tight 2xl:text-[2.75rem]/tight font-bold'>
                   Solusi keamanan siber yang inovatif dan terpercaya untuk
                   melindungi bisnis Anda
                 </h2>
-                <div className='text-base lg:text-xl my-8 2xl:max-w-[640px]'>
+                <div className='text-base md:text-lg lg:text-xl my-6 lg:my-8 2xl:max-w-[640px]'>
                   Kami menawarkan berbagai layanan yang dirancang untuk memenuhi
                   kebutuhan keamanan siber perusahaan Anda, sehingga Anda dapat
                   fokus pada pertumbuhan bisnis dengan tenang.
@@ -147,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='pt-4 pb-0 lg:pt-8 lg:pb-24 relative z-10 bg-brand-bluedark'>
+      <section className='pt-8 pb-8 lg:pt-8 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
           <div className='mx-auto text-center'>
             <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
@@ -186,14 +187,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10 bg-brand-bluedark'>
+      <section className='pt-8 pb-8 lg:pt-12 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
           <div className='mx-auto text-center'>
             <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
               Produk Unggulan Kami
             </h2>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-4 mt-12 lg:mt-16'>
+          <div className='grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-4 mt-8 lg:mt-16'>
             {products &&
               products.map((item, i) => (
                 <div
@@ -219,7 +220,7 @@ export default function Home() {
                 </div>
               ))}
           </div>
-          <div className='prose prose-lg max-w-screen-md text-center text-white mx-auto mt-12 lg:mt-16'>
+          <div className='prose lg:prose-lg max-w-screen-md lg:text-center text-white mx-auto mt-10 lg:mt-16'>
             <p>
               Dengan menggunakan layanan kami dan produk unggulan ini, Anda akan
               mendapatkan manfaat seperti perlindungan yang lebih baik terhadap
@@ -232,7 +233,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-brand-bluedark to-brand-bluenight'>
+      <section className='pt-8 pb-8 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-brand-bluedark to-brand-bluenight'>
         <div className='container py-12 mx-auto'>
           <div className='grid gap-4 xl:gap-8 xl:grid-cols-5'>
             <div className='max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left'>

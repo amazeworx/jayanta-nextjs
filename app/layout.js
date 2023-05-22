@@ -1,6 +1,7 @@
 import './globals.css';
 import { Barlow, Inter } from 'next/font/google';
 import Navbar from './navbar';
+import Drawer from './drawer';
 import Footer from './footer';
 
 const barlow = Barlow({
@@ -30,9 +31,15 @@ export default function RootLayout({ children }) {
           ' scroll-smooth bg-brand-bluenight text-white text-lg antialiased'
         }
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className='drawer drawer-end'>
+          <input id='menu-drawer' type='checkbox' className='drawer-toggle' />
+          <div className='drawer-content flex flex-col overflow-x-hidden'>
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+          <Drawer />
+        </div>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ export default function Footer() {
             <h3 className='text-4xl lg:text-5xl font-bold mt-8 mb-8 text-center lg:text-left'>
               Hubungi Kami
             </h3>
-            <p className='text-lg mb-6'>
+            <p className='text-lg text-center lg:text-left mb-6'>
               Siap untuk menjadikan perusahaan Anda lebih aman dari ancaman
               siber? <br />
               Hubungi kami hari ini! Tim kami akan dengan senang hati membantu
@@ -29,7 +29,7 @@ export default function Footer() {
               <Image
                 src='/images/logo-jayanta.svg'
                 alt='Jayanta'
-                className='h-12 lg:h-16 w-auto'
+                className='h-12 lg:h-16 w-auto inline-block'
                 width={800}
                 height={254}
                 priority
