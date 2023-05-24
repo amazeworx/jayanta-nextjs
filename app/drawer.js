@@ -114,9 +114,8 @@ export default function Drawer() {
                 </div>
               </div>
               <div tabIndex={0} className='collapse collapse-arrow rounded-lg'>
-                <div className='collapse-title min-h-min px-4 py-3'>
-                  Products
-                </div>
+                <input type='checkbox' className='min-h-0' />
+                <div className='collapse-title min-h-0 px-4 py-3'>Products</div>
                 <div className='collapse-content'>
                   <div className='flex flex-col gap-2 py-2'>
                     <a
@@ -153,7 +152,8 @@ export default function Drawer() {
                 </div>
               </div>
               <div tabIndex={0} className='collapse collapse-arrow rounded-lg'>
-                <div className='collapse-title min-h-min px-4 py-3'>
+                <input type='checkbox' className='min-h-0' />
+                <div className='collapse-title min-h-0 px-4 py-3'>
                   Compliance
                 </div>
                 <div className='collapse-content'>

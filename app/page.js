@@ -8,63 +8,63 @@ export default function Home() {
       title: 'Penetration Testing',
       description:
         'Proses evaluasi keamanan sistem TI dengan cara meniru serangan dari peretas. Tujuannya adalah untuk mengidentifikasi dan memperbaiki kelemahan keamanan sebelum peretas sebenarnya mengeksploitasi celah tersebut.',
-      link: '',
+      link: '/services/penetration-testing',
     },
     {
       icon: '/images/icons/cyber-threat-intelligence.png',
       title: 'Cyber Threat Intelligence (CIT)',
       description:
         'Proses pengumpulan, analisis, dan berbagi informasi tentang ancaman siber untuk membantu organisasi dalam mengidentifikasi, memprioritaskan, dan merespon ancaman keamanan yang dihadapi.',
-      link: '',
+      link: '/services/cyber-threat-intelligence',
     },
     {
       icon: '/images/icons/vulnerability-assessment.png',
       title: 'Vulnerability Assessment',
       description:
         'Proses sistematis untuk mengidentifikasi, mengklasifikasikan, dan memprioritaskan kelemahan keamanan dalam sistem komputer, jaringan, dan aplikasi. Tujuannya adalah untuk membantu organisasi dalam mengurangi risiko yang dihadapi akibat celah keamanan tersebut.',
-      link: '',
+      link: '/services/vulnerability-assessment',
     },
     {
       icon: '/images/icons/incident-response-handling.png',
       title: 'Incident Response Handling',
       description:
         'Serangkaian langkah yang diambil oleh tim keamanan siber untuk mengidentifikasi, mengatasi, dan memulihkan dari insiden keamanan siber. Tujuannya adalah untuk meminimalkan dampak insiden pada bisnis dan mencegah insiden serupa di masa depan.',
-      link: '',
+      link: '/services/incident-response-handling',
     },
     {
       icon: '/images/icons/digital-forensics.png',
       title: 'Digital Forensics',
       description:
         'Proses pengumpulan, analisis, dan penyajian bukti digital yang berkaitan dengan kejahatan siber atau pelanggaran kebijakan. Tujuannya adalah untuk membantu dalam investigasi kejahatan siber dan memastikan bahwa bukti yang dikumpulkan dapat digunakan dalam proses hukum.',
-      link: '',
+      link: '/services/digital-forensic',
     },
     {
       icon: '/images/icons/litigation-support.png',
       title: 'Litigation Support',
       description:
         'Layanan yang membantu perusahaan dan pengacara dalam menghadapi tuntutan hukum yang berkaitan dengan keamanan siber. Layanan ini mencakup penyelidikan, analisis, dan presentasi bukti untuk membantu pengacara dalam membangun kasus yang kuat.',
-      link: '',
+      link: '/services/litigation-support',
     },
     {
       icon: '/images/icons/compliance-advisory.png',
       title: 'Compliance Advisory',
       description:
         'Layanan konsultasi yang membantu organisasi memahami dan memenuhi persyaratan kepatuhan keamanan siber yang relevan dengan industri mereka. Layanan ini mencakup pengkajian kepatuhan, pengembangan kebijakan, dan dukungan dalam implementasi praktik keamanan terbaik.',
-      link: '',
+      link: '/services/compliance-advisory',
     },
     {
       icon: '/images/icons/darkweb-monitoring.png',
       title: 'Dark Web Monitoring',
       description:
         'Layanan yang memantau aktivitas di dark web untuk mengidentifikasi informasi sensitif atau data yang telah dicuri dan dijual di pasar gelap. Tujuannya adalah untuk memberikan peringatan dini tentang kemungkinan ancaman keamanan dan membantu perusahaan mengambil tindakan pencegahan.',
-      link: '',
+      link: '/services/dark-web-monitoring',
     },
     {
       icon: '/images/icons/security-operation-center.png',
       title: 'Security Operation Center (SOC)',
       description:
         'Pusat pengendalian yang didedikasikan untuk mengawasi, mengelola, dan melindungi infrastruktur TI dari ancaman keamanan siber. SOC menggunakan teknologi, proses, dan personel yang terlatih untuk mendeteksi, menganalisis, dan merespon insiden keamanan secara real-time.',
-      link: '',
+      link: '#',
     },
   ];
 
@@ -74,35 +74,35 @@ export default function Home() {
       title: 'Recorded Future',
       description:
         'Platform Threat Intelligence yang membantu Anda mengidentifikasi, memahami, dan mengurangi ancaman siber secara real-time dengan informasi ancaman yang komprehensif dan relevan.',
-      link: '',
+      link: '/products/threat-intelligence-platform',
     },
     {
       icon: '/images/products/cyberark.svg',
       title: 'CyberArk',
       description:
         'Solusi Privileged Access Management (PAM) untuk melindungi dan mengelola akses ke akun dengan hak istimewa, mencegah penyalahgunaan dan mengurangi risiko kebocoran data.',
-      link: '',
+      link: '/products/privileged-access-management',
     },
     {
       icon: '/images/products/sailpoint.svg',
       title: 'SailPoint',
       description:
         'Platform Identity and Access Management (IAM) yang memungkinkan perusahaan untuk mengelola akses pengguna, mengotomatisasi proses-proses terkait, dan memastikan kepatuhan terhadap kebijakan keamanan.',
-      link: '',
+      link: '/products/platform-identity-and-access-management',
     },
     {
       icon: '/images/products/logrhytm.svg',
       title: 'LogRhythm',
       description:
         'Security Operation Center (SOC) yang menyediakan alat dan layanan untuk mendeteksi, menganalisis, dan merespon insiden keamanan secara real-time, melindungi organisasi Anda dari ancaman siber yang terus berkembang.',
-      link: '',
+      link: '/products/security-operation-center',
     },
     {
       icon: '/images/products/appdome.svg',
       title: 'AppDome',
       description:
         'Platform Mobile DevSecOps yang memungkinkan integrasi keamanan, mobilitas, dan fungsi lainnya ke dalam aplikasi seluler tanpa perlu mengubah kode sumber.',
-      link: '',
+      link: '/products/mobile-devsecops',
     },
   ];
 
@@ -151,72 +151,76 @@ export default function Home() {
       <section className='pt-8 pb-8 lg:pt-8 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
           <div className='mx-auto text-center'>
-            <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
+            <h2 className='text-3xl md:text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
               Layanan Kami
             </h2>
             <p className='text-base lg:text-xl text-white mx-auto'>
               Kami menyediakan rangkaian layanan keamanan siber yang mencakup
             </p>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 mt-12 lg:mt-20'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 xl:gap-6 2xl:gap-8 mt-8 md:mt-12 lg:mt-12 xl:mt-12'>
             {services &&
               services.map((item, i) => (
-                <div
-                  className='bg-gradient-to-br from-[#1E2472] to-[#111543] rounded-xl p-6 lg:p-12 text-white'
+                <a
+                  href={item.link}
+                  className='block bg-gradient-to-br from-[#1E2472] to-[#111543] rounded-xl p-4 md:p-6 lg:p-8 xl:p-10 text-white hover:shadow-[inset_0px_0px_0px_2px_#06b6d4] transition-all duration-500'
                   key={i}
                 >
                   <div className='mb-4'>
                     <Image
                       src={item.icon}
                       alt=''
-                      className='w-16 h-auto'
+                      className='w-14 md:w-16 h-auto'
                       width={128}
                       height={128}
                       priority
                     />
                   </div>
-                  <h3 className='text-2xl mb-4 font-bold text-cyan-400'>
+                  <h3 className='text-xl md:text-2xl mb-3 font-bold text-cyan-400'>
                     {item.title}
                   </h3>
-                  <div className='text-base text-white/70'>
+                  <div className='text-sm md:text-[15px] text-white/70'>
                     {item.description}
                   </div>
-                </div>
+                </a>
               ))}
           </div>
         </div>
       </section>
 
-      <section className='pt-8 pb-8 lg:pt-12 lg:pb-24 relative z-10 bg-brand-bluedark'>
+      <section className='pt-10 pb-8 lg:pt-12 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
           <div className='mx-auto text-center'>
-            <h2 className='text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
+            <h2 className='text-3xl md:text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
               Produk Unggulan Kami
             </h2>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-4 mt-8 lg:mt-16'>
+          <div className='flex flex-wrap justify-center mt-6 lg:mt-16'>
             {products &&
               products.map((item, i) => (
-                <div
-                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:py-8 lg:px-8 text-white'
-                  key={i}
-                >
-                  <div className='mb-6'>
-                    <Image
-                      src={item.icon}
-                      alt='{item.title}'
-                      className='w-auto h-12'
-                      width={128}
-                      height={128}
-                      priority
-                    />
-                  </div>
-                  <h3 className='text-3xl mb-4 font-bold text-cyan-400 hidden'>
-                    {item.title}
-                  </h3>
-                  <div className='text-[15px] leading-snug text-white/80'>
-                    {item.description}
-                  </div>
+                <div className='py-2 md:p-2 lg:p-3 w-full md:w-1/2 lg:w-1/3 3xl:w-1/5'>
+                  <a
+                    href={item.link}
+                    className='block bg-[#0B2347] h-full w-full border border-solid border-[#FFFFFF2B] hover:border-transparent hover:shadow-[inset_0px_0px_0px_2px_#06b6d4] transition-all duration-500 rounded-xl p-6 lg:py-8 lg:px-8 text-white'
+                    key={i}
+                  >
+                    <div className='mb-6'>
+                      <Image
+                        src={item.icon}
+                        alt='{item.title}'
+                        className='w-auto h-12'
+                        width={128}
+                        height={128}
+                        priority
+                      />
+                    </div>
+                    <h3 className='text-3xl mb-4 font-bold text-cyan-400 hidden'>
+                      {item.title}
+                    </h3>
+                    <div className='text-[15px] leading-snug text-white/80'>
+                      {item.description}
+                    </div>
+                  </a>
                 </div>
               ))}
           </div>
@@ -234,16 +238,16 @@ export default function Home() {
       </section>
 
       <section className='pt-8 pb-8 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-brand-bluedark to-brand-bluenight'>
-        <div className='container py-12 mx-auto'>
+        <div className='container xl:py-12 mx-auto'>
           <div className='grid gap-4 xl:gap-8 xl:grid-cols-5'>
-            <div className='max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left'>
-              <h2 className='text-4xl lg:text-[2.5rem] font-bold mb-4 mt-16 lg:mb-8'>
+            <div className='my-4 xl:max-w-2xl xl:mx-auto xl:my-8 space-y-4 text-left xl:col-span-2 xl:text-left'>
+              <h2 className='text-3xl md:text-4xl lg:text-[2.5rem] font-bold mb-6 xl:mt-16 xl:mb-8'>
                 Mengapa Memilih Kami?
               </h2>
               <div className='flex flex-col gap-y-3'>
                 <div className='inline-flex gap-x-3'>
                   <svg
-                    className='text-cyan-400'
+                    className='text-cyan-400 flex-none'
                     width='24'
                     height='24'
                     viewBox='0 0 24 24'
@@ -262,7 +266,7 @@ export default function Home() {
                 </div>
                 <div className='inline-flex gap-x-3'>
                   <svg
-                    className='text-cyan-400'
+                    className='text-cyan-400 flex-none'
                     width='24'
                     height='24'
                     viewBox='0 0 24 24'
@@ -280,7 +284,7 @@ export default function Home() {
                 </div>
                 <div className='inline-flex gap-x-3'>
                   <svg
-                    className='text-cyan-400'
+                    className='text-cyan-400 flex-none'
                     width='24'
                     height='24'
                     viewBox='0 0 24 24'
@@ -299,7 +303,7 @@ export default function Home() {
                 </div>
                 <div className='inline-flex gap-x-3'>
                   <svg
-                    className='text-cyan-400'
+                    className='text-cyan-400 flex-none'
                     width='24'
                     height='24'
                     viewBox='0 0 24 24'
@@ -315,11 +319,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='p-6 xl:col-span-3'>
+            <div className='xl:col-span-3 xl:p-6'>
               <div className='grid gap-4 md:grid-cols-2'>
                 <div className='grid gap-4'>
                   <div className='p-6 rounded-lg bg-black/20'>
-                    <p>
+                    <p className='text-[15px] lg:text-base'>
                       Ini adalah pengalaman pertama kami bekerja sama dengan tim
                       ini, dan kami sangat puas dengan hasilnya. Mereka telah
                       membantu kami mengidentifikasi dan memperbaiki celah
@@ -327,11 +331,6 @@ export default function Home() {
                       aman dan percaya diri.
                     </p>
                     <div className='flex items-center mt-4 space-x-4'>
-                      <img
-                        src='https://source.unsplash.com/50x50/?portrait?1'
-                        alt=''
-                        className='w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500'
-                      />
                       <div>
                         <p className='text-lg font-semibold'>Bpk. Hendri</p>
                         <p className='text-sm dark:text-gray-400'>
@@ -341,17 +340,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='p-6 rounded-lg bg-black/20'>
-                    <p>
+                    <p className='text-[15px] lg:text-base'>
                       Kami sangat merekomendasikan layanan mereka. Tim ini
                       sangat kompeten, responsif, dan selalu siap membantu kami
                       menghadapi tantangan keamanan siber.
                     </p>
                     <div className='flex items-center mt-4 space-x-4'>
-                      <img
-                        src='https://source.unsplash.com/50x50/?portrait?2'
-                        alt=''
-                        className='w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500'
-                      />
                       <div>
                         <p className='text-lg font-semibold'>Ibu Rina</p>
                         <p className='text-sm dark:text-gray-400'>
@@ -363,18 +357,13 @@ export default function Home() {
                 </div>
                 <div className='grid gap-4'>
                   <div className='p-6 rounded-lg bg-black/20'>
-                    <p>
+                    <p className='text-[15px] lg:text-base'>
                       Layanan keamanan siber yang mereka tawarkan sangat efektif
                       dalam mengurangi risiko serangan siber terhadap bisnis
                       kami. Dukungan dan komunikasi yang baik dari tim mereka
                       membuat proses ini berjalan lancar dan sukses.
                     </p>
                     <div className='flex items-center mt-4 space-x-4'>
-                      <img
-                        src='https://source.unsplash.com/50x50/?portrait?3'
-                        alt=''
-                        className='w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500'
-                      />
                       <div>
                         <p className='text-lg font-semibold'>Bpk. Andi</p>
                         <p className='text-sm dark:text-gray-400'>
@@ -384,7 +373,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='p-6 rounded-lg bg-black/20'>
-                    <p>
+                    <p className='text-[15px] lg:text-base'>
                       Setelah bekerja sama dengan tim ini, kami telah melihat
                       peningkatan signifikan dalam keamanan infrastruktur TI
                       kami. Mereka selalu memberikan saran dan rekomendasi yang
@@ -392,11 +381,6 @@ export default function Home() {
                       kami.
                     </p>
                     <div className='flex items-center mt-4 space-x-4'>
-                      <img
-                        src='https://source.unsplash.com/50x50/?portrait?4'
-                        alt=''
-                        className='w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500'
-                      />
                       <div>
                         <p className='text-lg font-semibold'>Ibu Dian</p>
                         <p className='text-sm dark:text-gray-400'>

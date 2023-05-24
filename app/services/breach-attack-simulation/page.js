@@ -64,7 +64,7 @@ export default function BreachAttack() {
 
   return (
     <>
-      <section className='relative pt-24 pb-16 min-h-[360px]'>
+      <section className='relative pt-8 pb-8 xl:pt-24 xl:pb-16'>
         <Image
           src='/images/bg-banner.jpg'
           alt='Header'
@@ -74,18 +74,18 @@ export default function BreachAttack() {
           priority
         />
         <div className='absolute inset-0 bg-gradient-to-t from-brand-bluenight from-0% via-brand-bluenight/50 via-50% to-transparent'></div>
-        <div className='relative z-10 mt-16'>
+        <div className='relative z-10 mt-8 xl:mt-10 2xl:mt-16'>
           <div className='container max-w-screen-xl'>
-            <div className='flex gap-16'>
-              <div className='w-2/3'>
+            <div className='flex flex-wrap md:flex-nowrap md:gap-8 lg:gap-12 xl:gap-16'>
+              <div className='w-full order-2 md:w-3/4 lg:w-2/3 md:order-1'>
                 <h3 className='mb-4'>LAYANAN KAMI</h3>
-                <h1 className='text-5xl font-bold mb-6'>
+                <h1 className='text-4xl xl:text-5xl font-bold mb-4 xl:mb-6'>
                   Breach and Attack Simulation
                 </h1>
                 <h2 className='text-2xl font-semibold mb-6'>
                   Tingkatkan Keamanan Sistem Anda
                 </h2>
-                <p className='text-lg mt-4'>
+                <p className='text-base/relaxed xl:text-lg mt-4'>
                   Dalam dunia keamanan siber yang terus berkembang, ancaman baru
                   dan teknik serangan yang lebih canggih terus bermunculan.
                   Untuk melindungi data, sistem, dan reputasi organisasi,
@@ -96,9 +96,9 @@ export default function BreachAttack() {
                   serangan yang otentik dan terencana.
                 </p>
               </div>
-              <div className='w-1/3'>
+              <div className='w-1/3 order-1 mb-6 md:mb-0 md:w-1/4 lg:w-1/3 md:order-2'>
                 <div className='aspect-w-1 aspect-h-1'>
-                  <div className='w-full h-full rounded-xl bg-brand-bluenight p-8 flex items-center justify-center'>
+                  <div className='w-full h-full rounded-xl bg-brand-bluenight p-6 md:p-8 flex items-center justify-center'>
                     <Image
                       src='/images/icons/breach-attack-simulation.png'
                       alt='Breach Attack Simulation'
@@ -115,11 +115,11 @@ export default function BreachAttack() {
         </div>
       </section>
 
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+      <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
+          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
             <div className='mb-8'>
-              <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
+              <h2 className='text-3xl xl:text-4xl font-bold mb-4 lg:mb-6'>
                 Mengapa Memilih Layanan Breach and Attack Simulation?
               </h2>
             </div>
@@ -147,9 +147,9 @@ export default function BreachAttack() {
         </div>
       </section>
 
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+      <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
+          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
             <div className=''>
               <h2 className='text-4xl lg:text-4xl/snug text-white font-bold mb-4'>
                 Layanan Kami
@@ -181,9 +181,9 @@ export default function BreachAttack() {
         </div>
       </section>
 
-      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+      <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-20'>
+          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
             <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-8'>
               FAQ tentang Breach and Attack Simulation
             </h2>

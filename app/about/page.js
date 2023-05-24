@@ -24,7 +24,7 @@ export default function About() {
       link: '',
     },
     {
-      icon: '/images/icons/incident-report-handling.png',
+      icon: '/images/icons/incident-response-handling.png',
       title: 'Incident Response Handling',
       description:
         'Serangkaian langkah yang diambil oleh tim keamanan siber untuk mengidentifikasi, mengatasi, dan memulihkan dari insiden keamanan siber. Tujuannya adalah untuk meminimalkan dampak insiden pada bisnis dan mencegah insiden serupa di masa depan.',
@@ -163,7 +163,7 @@ export default function About() {
 
   return (
     <>
-      <section className='relative py-24 min-h-[360px]'>
+      <section className='relative pt-8 pb-8 xl:pt-24 xl:pb-16'>
         <Image
           src='/images/bg-banner.jpg'
           alt='Header'
@@ -173,14 +173,14 @@ export default function About() {
           priority
         />
         <div className='absolute inset-0 bg-gradient-to-t from-[#091D42] from-0% via-[#091D42]/50 via-50% to-transparent'></div>
-        <div className='relative z-10 mt-16'>
+        <div className='relative z-10 mt-8 xl:mt-10 2xl:mt-16'>
           <div className='container text-left text-white'>
             <div className='max-w-prose'>
               <h2 className='mb-4'>TENTANG KAMI</h2>
-              <h1 className='text-5xl font-bold mb-6'>
+              <h1 className='text-4xl xl:text-5xl font-bold mb-4 xl:mb-6'>
                 Solusi Keamanan Siber yang Profesional dan Terpercaya
               </h1>
-              <p className='text-2xl mt-4'>
+              <p className='text-base/relaxed xl:text-lg mt-4'>
                 Selamat datang di Jayanta.ID, perusahaan profesional yang
                 berfokus pada solusi keamanan siber yang inovatif dan efektif.
                 Didirikan pada tahun 2015, kami berkomitmen untuk membantu
@@ -191,12 +191,15 @@ export default function About() {
           </div>
         </div>
       </section>
+
       <section className='relative bg-[#091D42]'>
         <div className='container'>
-          <div className='grid grid-cols-2 gap-16'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 xl:gap-12 2xl:gap-16'>
             <div className='bg-black/20 rounded-xl p-6 lg:p-10 text-white'>
-              <h3 className='text-4xl mb-4 font-bold text-cyan-400'>Visi</h3>
-              <div className='text-lg text-white/80'>
+              <h3 className='text-3xl xl:text-4xl mb-4 font-bold text-cyan-400'>
+                Visi
+              </h3>
+              <div className='text-base xl:text-lg text-white/80'>
                 Visi kami adalah menjadi pemimpin industri dalam solusi keamanan
                 siber, memberikan layanan yang unggul dan terpercaya untuk
                 memastikan keamanan dan privasi data klien kami. Kami percaya
@@ -206,8 +209,10 @@ export default function About() {
               </div>
             </div>
             <div className='bg-black/20 rounded-xl p-6 lg:p-10 text-white'>
-              <h3 className='text-4xl mb-4 font-bold text-cyan-400'>Misi</h3>
-              <div className='text-lg text-white/80'>
+              <h3 className='text-3xl xl:text-4xl mb-4 font-bold text-cyan-400'>
+                Misi
+              </h3>
+              <div className='text-base xl:text-lg text-white/80'>
                 Misi kami adalah melindungi bisnis dan individu dari ancaman
                 siber dengan menyediakan layanan keamanan siber yang
                 komprehensif dan terintegrasi. Kami menyadari betapa pentingnya
@@ -219,13 +224,14 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-36 lg:pb-36 relative z-10 bg-gradient-to-b from-[#091D42] to-brand-bluedark'>
+
+      <section className='pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-24 xl:pt-24 relative z-10 bg-gradient-to-b from-[#091D42] to-brand-bluedark'>
         <div className='container'>
           <div className='max-w-prose mb-10'>
-            <h2 className='text-4xl lg:text-4xl text-white font-bold mb-4'>
+            <h2 className='text-3xl xl:text-4xl text-white font-bold mb-4'>
               Tim Kami
             </h2>
-            <div className='prose prose-lg text-white'>
+            <div className='prose xl:prose-lg text-white'>
               <p>
                 Tim Jayanta.ID terdiri dari para ahli keamanan siber yang
                 berpengalaman dan berdedikasi, yang memiliki pengetahuan dan
@@ -239,20 +245,20 @@ export default function About() {
           </div>
         </div>
         <div className='container'>
-          <div className='grid grid-cols-4 gap-8'>
+          <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-4'>
             {certified &&
               certified.map((item, i) => (
                 <div
-                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:p-8 text-white'
+                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-5 lg:p-6 text-white'
                   key={i}
                 >
-                  <h3 className='text-4xl mb-1 font-bold text-cyan-400'>
+                  <h3 className='text-3xl xl:text-4xl mb-1 font-bold text-cyan-400'>
                     {item.title}
                   </h3>
-                  <h4 className='text-cyan-400 text-[lg] leading-tight mb-4'>
+                  <h4 className='text-cyan-400 text-base/tight lg:text-lg/tight mb-4'>
                     {item.subtitle}
                   </h4>
-                  <div className='text-base text-white/80'>
+                  <div className='text-[15px] leading-normal text-white/80'>
                     <div
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     />
@@ -262,38 +268,72 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-8 lg:pb-24 relative z-10 bg-brand-bluedark'>
+
+      <section className='pt-8 pb-8 lg:pb-24 relative z-10 bg-brand-bluedark'>
         <div className='container'>
-          <div className='max-w-screen-md mx-auto text-center'>
-            <h2 className='text-4xl lg:text-5xl text-white font-bold mb-4'>
+          <div className='mx-auto max-w-prose text-center'>
+            <h2 className='text-3xl md:text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
               Layanan Kami
             </h2>
-            <p className='text-base lg:text-2xl text-white mx-auto'>
+            <p className='text-base lg:text-xl text-white mx-auto'>
               Kami menawarkan berbagai layanan keamanan siber yang dirancang
               untuk memenuhi kebutuhan spesifik klien kami, termasuk:
             </p>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 mt-12 lg:mt-20'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 xl:gap-6 2xl:gap-8 mt-8 md:mt-12 lg:mt-12 xl:mt-12'>
             {services &&
               services.map((item, i) => (
-                <div
-                  className='bg-gradient-to-br from-[#1E2472] to-[#111543] rounded-xl p-6 lg:p-12 text-white'
+                <a
+                  href={item.link}
+                  className='block bg-gradient-to-br from-[#1E2472] to-[#111543] rounded-xl p-5 md:p-6 lg:p-8 xl:p-10 text-white hover:shadow-[inset_0px_0px_0px_2px_#06b6d4] transition-all duration-500'
                   key={i}
                 >
                   <div className='mb-4'>
                     <Image
                       src={item.icon}
                       alt=''
-                      className='w-16 h-auto'
+                      className='w-14 md:w-16 h-auto'
                       width={128}
                       height={128}
                       priority
                     />
                   </div>
-                  <h3 className='text-3xl mb-4 font-semibold text-cyan-400'>
+                  <h3 className='text-xl md:text-2xl mb-3 font-bold text-cyan-400'>
                     {item.title}
                   </h3>
-                  <div className='text-base text-white/60'>
+                  <div className='text-sm md:text-[15px] text-white/70'>
+                    {item.description}
+                  </div>
+                </a>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      <section className='pt-8 pb-8 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-brand-bluedark to-[#091D42]'>
+        <div className='container'>
+          <div className='flex flex-wrap gap-y-4 xl:gap-16 xl:items-end'>
+            <div className='mx-auto max-w-prose text-center'>
+              <h2 className='text-3xl md:text-4xl lg:text-[2.75rem] text-white font-bold mb-4'>
+                Nilai Kami
+              </h2>
+              <p className='text-base lg:text-xl text-white mx-auto'>
+                Kami bangga dengan nilai-nilai yang kami pegang teguh dalam
+                bisnis kami, yang meliputi:
+              </p>
+            </div>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 mt-6 lg:mt-12'>
+            {value &&
+              value.map((item, i) => (
+                <div
+                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:p-6 text-white'
+                  key={i}
+                >
+                  <h3 className='text-2xl xl:text-3xl mb-4 font-bold text-cyan-400'>
+                    {item.title}
+                  </h3>
+                  <div className='text-[15px] leading-normal xl:text-base text-white/80'>
                     {item.description}
                   </div>
                 </div>
@@ -301,19 +341,11 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className='pt-4 pb-0 lg:pt-12 lg:pb-24 relative z-10 bg-gradient-to-b from-brand-bluedark to-[#091D42]'>
-        <div className='container'>
-          <div className='flex gap-16 items-end'>
-            <div className='w-1/2'>
-              <h2 className='text-4xl lg:text-5xl text-white font-bold mb-4'>
-                Nilai Kami
-              </h2>
-              <p className='text-base lg:text-2xl text-white'>
-                Kami bangga dengan nilai-nilai yang kami pegang teguh dalam
-                bisnis kami, yang meliputi:
-              </p>
-            </div>
-            <div className='w-1/2'>
+
+      <section className='pt-4 pb-0 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
+        <div className='container max-w-screen-xl'>
+          <div className='bg-black/20 rounded-2xl p-6 lg:p-8 xl:px-20 xl:py-12'>
+            <div className='prose prose-lg xl:prose-xl max-w-none text-white'>
               <p>
                 Kami siap untuk membantu Anda menghadapi tantangan keamanan
                 siber dan melindungi aset digital Anda. Hubungi kami hari ini
@@ -322,22 +354,6 @@ export default function About() {
                 pikiran yang Anda butuhkan.
               </p>
             </div>
-          </div>
-          <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-6 mt-12 lg:mt-16'>
-            {value &&
-              value.map((item, i) => (
-                <div
-                  className='bg-[#0B2347] border border-solid border-[#FFFFFF2B] rounded-xl p-6 lg:p-6 text-white'
-                  key={i}
-                >
-                  <h3 className='text-3xl mb-4 font-bold text-cyan-400'>
-                    {item.title}
-                  </h3>
-                  <div className='text-base text-white/80'>
-                    {item.description}
-                  </div>
-                </div>
-              ))}
           </div>
         </div>
       </section>
