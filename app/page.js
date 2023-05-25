@@ -198,11 +198,13 @@ export default function Home() {
           <div className='flex flex-wrap justify-center mt-6 lg:mt-16'>
             {products &&
               products.map((item, i) => (
-                <div className='py-2 md:p-2 lg:p-3 w-full md:w-1/2 lg:w-1/3 3xl:w-1/5'>
+                <div
+                  className='py-2 md:p-2 lg:p-3 w-full md:w-1/2 lg:w-1/3 3xl:w-1/5'
+                  key={i}
+                >
                   <a
                     href={item.link}
                     className='block bg-[#0B2347] h-full w-full border border-solid border-[#FFFFFF2B] hover:border-transparent hover:shadow-[inset_0px_0px_0px_2px_#06b6d4] transition-all duration-500 rounded-xl p-6 lg:py-8 lg:px-8 text-white'
-                    key={i}
                   >
                     <div className='mb-6'>
                       <Image
