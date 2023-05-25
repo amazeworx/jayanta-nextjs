@@ -7,63 +7,63 @@ export default function About() {
       title: 'Penetration Testing',
       description:
         'Proses evaluasi keamanan sistem TI dengan cara meniru serangan dari peretas. Tujuannya adalah untuk mengidentifikasi dan memperbaiki kelemahan keamanan sebelum peretas sebenarnya mengeksploitasi celah tersebut.',
-      link: '',
+      link: '/services/penetration-testing',
     },
     {
       icon: '/images/icons/cyber-threat-intelligence.png',
       title: 'Cyber Threat Intelligence (CIT)',
       description:
         'Proses pengumpulan, analisis, dan berbagi informasi tentang ancaman siber untuk membantu organisasi dalam mengidentifikasi, memprioritaskan, dan merespon ancaman keamanan yang dihadapi.',
-      link: '',
+      link: '/services/cyber-threat-intelligence',
     },
     {
       icon: '/images/icons/vulnerability-assessment.png',
       title: 'Vulnerability Assessment',
       description:
         'Proses sistematis untuk mengidentifikasi, mengklasifikasikan, dan memprioritaskan kelemahan keamanan dalam sistem komputer, jaringan, dan aplikasi. Tujuannya adalah untuk membantu organisasi dalam mengurangi risiko yang dihadapi akibat celah keamanan tersebut.',
-      link: '',
+      link: '/services/vulnerability-assessment',
     },
     {
       icon: '/images/icons/incident-response-handling.png',
       title: 'Incident Response Handling',
       description:
         'Serangkaian langkah yang diambil oleh tim keamanan siber untuk mengidentifikasi, mengatasi, dan memulihkan dari insiden keamanan siber. Tujuannya adalah untuk meminimalkan dampak insiden pada bisnis dan mencegah insiden serupa di masa depan.',
-      link: '',
+      link: '/services/incident-response-handling',
     },
     {
       icon: '/images/icons/digital-forensics.png',
       title: 'Digital Forensics',
       description:
         'Proses pengumpulan, analisis, dan penyajian bukti digital yang berkaitan dengan kejahatan siber atau pelanggaran kebijakan. Tujuannya adalah untuk membantu dalam investigasi kejahatan siber dan memastikan bahwa bukti yang dikumpulkan dapat digunakan dalam proses hukum.',
-      link: '',
+      link: '/services/digital-forensic',
     },
     {
       icon: '/images/icons/litigation-support.png',
       title: 'Litigation Support',
       description:
         'Layanan yang membantu perusahaan dan pengacara dalam menghadapi tuntutan hukum yang berkaitan dengan keamanan siber. Layanan ini mencakup penyelidikan, analisis, dan presentasi bukti untuk membantu pengacara dalam membangun kasus yang kuat.',
-      link: '',
+      link: '/services/litigation-support',
     },
     {
       icon: '/images/icons/compliance-advisory.png',
       title: 'Compliance Advisory',
       description:
         'Layanan konsultasi yang membantu organisasi memahami dan memenuhi persyaratan kepatuhan keamanan siber yang relevan dengan industri mereka. Layanan ini mencakup pengkajian kepatuhan, pengembangan kebijakan, dan dukungan dalam implementasi praktik keamanan terbaik.',
-      link: '',
+      link: '/services/compliance-advisory',
     },
     {
       icon: '/images/icons/darkweb-monitoring.png',
       title: 'Dark Web Monitoring',
       description:
         'Layanan yang memantau aktivitas di dark web untuk mengidentifikasi informasi sensitif atau data yang telah dicuri dan dijual di pasar gelap. Tujuannya adalah untuk memberikan peringatan dini tentang kemungkinan ancaman keamanan dan membantu perusahaan mengambil tindakan pencegahan.',
-      link: '',
+      link: '/services/dark-web-monitoring',
     },
     {
       icon: '/images/icons/security-operation-center.png',
       title: 'Security Operation Center (SOC)',
       description:
         'Pusat pengendalian yang didedikasikan untuk mengawasi, mengelola, dan melindungi infrastruktur TI dari ancaman keamanan siber. SOC menggunakan teknologi, proses, dan personel yang terlatih untuk mendeteksi, menganalisis, dan merespon insiden keamanan secara real-time.',
-      link: '',
+      link: '#',
     },
   ];
 
