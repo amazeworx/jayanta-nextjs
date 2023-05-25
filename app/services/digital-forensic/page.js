@@ -124,12 +124,12 @@ export default function DigitalForensic() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
-            <div className='mb-8'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
+            <div className='mb-6 lg:mb-8 xl:mb-10 max-w-prose'>
               <h2 className='text-3xl xl:text-4xl font-bold mb-4 lg:mb-6'>
                 Layanan Digital Forensics
               </h2>
-              <div className='prose prose-lg max-w-none text-white'>
+              <div className='prose xl:prose-lg max-w-none text-white'>
                 <p>
                   Layanan Digital Forensics kami mencakup berbagai aspek,
                   termasuk:
@@ -158,11 +158,11 @@ export default function DigitalForensic() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
             <h2 className='text-4xl/snug font-bold mb-6'>
               Manfaat Digital Forensics
             </h2>
-            <div className='prose prose-lg max-w-none text-white'>
+            <div className='prose xl:prose-lg max-w-none text-white'>
               <p>
                 Manfaat menggunakan layanan Digital Forensics kami meliputi:
               </p>
@@ -191,8 +191,8 @@ export default function DigitalForensic() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
-            <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-8'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
+            <h2 className='text-3xl xl:text-4xl font-bold text-center mb-4 lg:mb-6'>
               FAQ mengenai Incident Response
             </h2>
             <div className='flex flex-col gap-y-4'>

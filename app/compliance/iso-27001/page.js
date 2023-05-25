@@ -175,7 +175,7 @@ export default function Iso27001() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
             <div className=''>
               <h2 className='text-4xl/snug text-white font-bold mb-4'>
                 Layanan kami meliputi:
@@ -198,7 +198,7 @@ export default function Iso27001() {
                 ))}
             </div>
             <div className='mt-8'>
-              <div className='prose prose-lg max-w-none text-white'>
+              <div className='prose xl:prose-lg max-w-none text-white'>
                 <p>
                   Dengan mengandalkan layanan pemenuhan kepatuhan ISO 27001
                   kami, Anda akan mendapatkan dukungan yang komprehensif dan
@@ -218,12 +218,12 @@ export default function Iso27001() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
-            <div className='mb-8'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
+            <div className='mb-6 lg:mb-8 xl:mb-10 max-w-prose'>
               <h2 className='text-3xl xl:text-4xl font-bold mb-4 lg:mb-6'>
                 Benefit dari sertifikasi ISO 27001 bagi perusahaan anda
               </h2>
-              <div className='prose prose-lg max-w-none text-white'>
+              <div className='prose xl:prose-lg max-w-none text-white'>
                 <p>
                   Meningkatkan kepercayaan pelanggan, mitra, dan pemangku
                   kepentingan: Menunjukkan kepatuhan terhadap standar keamanan
@@ -233,18 +233,18 @@ export default function Iso27001() {
                 </p>
               </div>
             </div>
-            <div className='bg-[#0B2347] bg-black/20 rounded-xl p-6 lg:p-10 text-white -mx-10'>
-              <div className='grid grid-cols-2 gap-6 lg:gap-10'>
+            <div className='bg-black/20 rounded-xl p-5 lg:p-6 xl:p-8 2xl:p-10 text-white -mx-4 lg:-mx-6 xl:-mx-8 2xl:-mx-10'>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 xl:gap-10'>
                 {benefits &&
                   benefits.map((item, i) => (
                     <div
                       className='pb-6 text-white border-b border-white/10'
                       key={i}
                     >
-                      <h3 className='text-2xl mb-3 font-bold text-cyan-400'>
+                      <h3 className='text-xl md:text-2xl mb-3 font-bold text-cyan-400'>
                         {item.title}
                       </h3>
-                      <div className='text-base text-white/80'>
+                      <div className='text-[15px]/normal md:text-base text-white/80'>
                         <div
                           dangerouslySetInnerHTML={{ __html: item.description }}
                         />
@@ -259,7 +259,7 @@ export default function Iso27001() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
             <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-12'>
               FAQ mengenai ISO 27001
             </h2>

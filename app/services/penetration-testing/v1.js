@@ -266,7 +266,7 @@ export default function PenTest() {
               <h2 className='text-4xl font-bold mb-6'>
                 Apa itu Penetration Testing?
               </h2>
-              <div className='prose prose-lg max-w-none text-white'>
+              <div className='prose xl:prose-lg max-w-none text-white'>
                 <p>
                   Penetration testing, atau pentesting, adalah metode evaluasi
                   keamanan siber yang etis yang bertujuan untuk menemukan,
@@ -410,7 +410,7 @@ export default function PenTest() {
       <section className='pt-4 pb-0 lg:pt-20 lg:pb-36 relative z-10 bg-[#091D42]'>
         <div className='container'>
           <div className='max-w-screen-md mx-auto'>
-            <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-8'>
+            <h2 className='text-3xl xl:text-4xl font-bold text-center mb-4 lg:mb-6'>
               FAQ Pentest
             </h2>
             <div className='flex flex-col gap-y-3'>

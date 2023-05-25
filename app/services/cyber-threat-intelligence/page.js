@@ -124,11 +124,11 @@ export default function CyberThreatIntelligence() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
             <h2 className='text-3xl xl:text-4xl font-bold mb-4 lg:mb-6'>
               Mengapa Layanan Cyber Threat Intelligence Penting?
             </h2>
-            <div className='prose prose-lg max-w-none text-white'>
+            <div className='prose xl:prose-lg max-w-none text-white'>
               <ul className='checklist-ul'>
                 <li>
                   Mendeteksi ancaman siber secara proaktif sebelum menimbulkan
@@ -158,7 +158,7 @@ export default function CyberThreatIntelligence() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
             <div className=''>
               <h2 className='text-4xl lg:text-4xl/snug text-white font-bold mb-4'>
                 Apa yang Dapat Anda Dapatkan dari Layanan Cyber Threat
@@ -187,13 +187,13 @@ export default function CyberThreatIntelligence() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
             <div className='mb-8'>
               <h2 className='text-4xl lg:text-4xl/snug text-white font-bold mb-4'>
                 Konsep Cyber Security lain yang sering disalah artikan sebagai
                 Cyber Threat Intelligence (CTI)
               </h2>
-              <div className='prose prose-lg max-w-none text-white'>
+              <div className='prose xl:prose-lg max-w-none text-white'>
                 <p>
                   Beberapa konsep yang sering disalahartikan sebagai Cyber
                   Threat Intelligence (CTI) atau dianggap sama dengan CTI
@@ -724,8 +724,8 @@ export default function CyberThreatIntelligence() {
 
       <section className='pt-4 pb-4 lg:pt-0 lg:pb-10 relative z-10 bg-brand-bluenight'>
         <div className='container max-w-screen-xl'>
-          <div className='bg-black/20 rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20'>
-            <h2 className='text-4xl lg:text-4xl text-white font-bold text-center mb-8'>
+          <div className='bg-black/20 rounded-none md:rounded-2xl p-6 lg:p-10 xl:p-16 2xl:p-20 -mx-4 md:-mx-0'>
+            <h2 className='text-3xl xl:text-4xl font-bold text-center mb-4 lg:mb-6'>
               FAQ Mengenai Layanan Cyber Threat Intelligence (CTI)
             </h2>
             <div className='flex flex-col gap-y-4 mt-10'>
