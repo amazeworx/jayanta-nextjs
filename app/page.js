@@ -1,5 +1,10 @@
-'use client';
 import Image from 'next/image';
+
+export const metadata = {
+  title: 'Solusi Keamanan Siber | Jayanta.id',
+  description:
+    'Kami menawarkan berbagai layanan yang dirancang untuk memenuhi kebutuhan keamanan siber perusahaan Anda, sehingga Anda dapat fokus pada pertumbuhan bisnis dengan tenang.',
+};
 
 export default function Home() {
   const services = [
@@ -64,7 +69,7 @@ export default function Home() {
       title: 'Security Operation Center (SOC)',
       description:
         'Pusat pengendalian yang didedikasikan untuk mengawasi, mengelola, dan melindungi infrastruktur TI dari ancaman keamanan siber. SOC menggunakan teknologi, proses, dan personel yang terlatih untuk mendeteksi, menganalisis, dan merespon insiden keamanan secara real-time.',
-      link: '#',
+      link: '/products/security-operation-center',
     },
   ];
 

@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Breach and Attack Simulation | Jayanta.id',
+  description:
+    'Layanan Breach and Attack Simulation (BAS) dirancang untuk menguji dan mengoptimalkan strategi keamanan Anda melalui simulasi serangan yang otentik dan terencana.',
+};
+
 export default function BreachAttack() {
   const services = [
     {

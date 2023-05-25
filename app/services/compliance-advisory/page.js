@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Compliance Advisory | Jayanta.id',
+  description:
+    'Layanan Compliance Advisory kami dirancang untuk membantu organisasi dalam menavigasi labirin peraturan yang berlaku, mengidentifikasi persyaratan kepatuhan yang relevan, dan mengembangkan strategi yang efektif untuk memastikan kepatuhan yang berkelanjutan.',
+};
+
 export default function ComplianceAdvisory() {
   const services = [
     {

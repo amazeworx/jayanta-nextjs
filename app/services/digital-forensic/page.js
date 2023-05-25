@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Digital Forensics | Jayanta.id',
+  description:
+    'Layanan Digital Forensics kami membantu organisasi dan individu menemukan bukti yang sah, mengungkap fakta, dan menjaga kepentingan mereka dalam berbagai kasus keamanan siber, pelanggaran hukum, dan perselisihan perdata.',
+};
+
 export default function DigitalForensic() {
   const features = [
     {

@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Identity and Access Management - SailPoint | Jayanta.id',
+  description:
+    'SailPoint merupakan solusi IAM terkemuka yang membantu organisasi mengelola identitas pengguna dan akses mereka secara efektif, aman, dan efisien.',
+};
+
 export default function SailPoint() {
   const features = [
     {

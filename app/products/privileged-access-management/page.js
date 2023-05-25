@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Privileged Access Management (PAM) - CyberArk | Jayanta.id',
+  description:
+    'Layanan PAM kami menggunakan teknologi CyberArk untuk membantu Anda mengelola dan melindungi akses istimewa ke sistem, aplikasi, dan data Anda.',
+};
+
 export default function RecordedFuture() {
   const why = [
     {

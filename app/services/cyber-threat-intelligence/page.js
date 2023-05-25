@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Cyber Threat Intelligence | Jayanta.id',
+  description:
+    'Layanan Cyber Threat Intelligence kami dirancang untuk membantu organisasi dalam mengidentifikasi, menganalisis, dan menghadapi ancaman siber yang terus berkembang, sehingga memungkinkan mereka untuk melindungi aset digital mereka dan menjaga kelangsungan operasional.',
+};
+
 export default function CyberThreatIntelligence() {
   const services = [
     {

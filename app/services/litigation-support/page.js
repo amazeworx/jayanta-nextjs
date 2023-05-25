@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Dukungan Litigasi | Jayanta.id',
+  description:
+    'Layanan Dukungan Litigasi kami dirancang untuk membantu organisasi dan individu dalam proses litigasi yang rumit dan seringkali membingungkan.',
+};
+
 export default function LitigationSupport() {
   const features = [
     {

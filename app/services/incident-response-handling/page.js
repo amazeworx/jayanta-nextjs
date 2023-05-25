@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Incident Response Handling | Jayanta.id',
+  description:
+    'Layanan Incident Response Handling kami memberi Anda dukungan ahli dan solusi cepat untuk mengatasi insiden keamanan siber dan meminimalkan dampaknya pada bisnis Anda.',
+};
+
 export default function IncidentResponse() {
   const features = [
     {

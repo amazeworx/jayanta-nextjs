@@ -1,5 +1,10 @@
 import Image from 'next/image';
-// import IntroText from '../../components/intro-text';
+
+export const metadata = {
+  title: 'Layanan Penetration Testing | Jayanta.id',
+  description:
+    'Layanan profesional untuk mengidentifikasi dan mengatasi kerentanan keamanan di sistem, aplikasi, dan situs web Anda',
+};
 
 export default function PenTest() {
   const services = [

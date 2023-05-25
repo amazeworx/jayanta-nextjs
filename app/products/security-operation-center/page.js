@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Security Operation Center - LogRhythm | Jayanta.id',
+  description:
+    'Security Operation Center (SOC) bertujuan untuk mendeteksi, menganalisis, dan merespon ancaman keamanan siber secara real-time.',
+};
+
 export default function LogRhytm() {
   const features = [
     {

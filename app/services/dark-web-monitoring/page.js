@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Dark Web Monitoring | Jayanta.id',
+  description:
+    'Layanan Dark Web Monitoring dirancang untuk membantu melindungi bisnis Anda dari ancaman yang berasal dari kedalaman ini, dengan memantau, mendeteksi, dan melaporkan aktivitas mencurigakan yang melibatkan data atau informasi perusahaan Anda.',
+};
+
 export default function DarkWebMonitoring() {
   const services = [
     {

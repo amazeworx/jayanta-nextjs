@@ -1,5 +1,12 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title:
+    'Layanan Asesmen Persiapan Menghadapi Serangan Ransomware | Jayanta.id',
+  description:
+    'Layanan asesmen persiapan menghadapi serangan ransomware kami dirancang untuk membantu Anda mengidentifikasi dan mengatasi potensi kelemahan keamanan serta memastikan kesiapan organisasi Anda dalam menghadapi serangan ransomware.',
+};
+
 export default function RansomwarePreparedness() {
   const services = [
     {

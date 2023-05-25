@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Mobile DevSecOps - Appdome | Jayanta.id',
+  description:
+    'Appdome adalah platform Mobile DevSecOps yang inovatif, dirancang untuk membantu pengembang aplikasi seluler dan perusahaan melindungi aplikasi mereka dari ancaman keamanan siber.',
+};
+
 export default function Appdome() {
   const features = [
     {

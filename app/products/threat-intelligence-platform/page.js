@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Threat Intelligence Platform - Recorded Future | Jayanta.id',
+  description:
+    'Recorded Future adalah platform intelijen ancaman (Threat Intelligence Platform) terdepan yang menggabungkan analisis otomatis dan manual untuk memberikan wawasan yang jelas dan komprehensif tentang ancaman siber.',
+};
+
 export default function RecordedFuture() {
   const features = [
     {

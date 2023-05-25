@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Cyber Security Services Indonesia | Jayanta',
+  title: 'Solusi Keamanan Siber | Jayanta.id',
   description:
-    'We provide Cyber Security Services to help prevent and stop cyber-attacks against your organisation.',
+    'Kami menawarkan berbagai layanan yang dirancang untuk memenuhi kebutuhan keamanan siber perusahaan Anda, sehingga Anda dapat fokus pada pertumbuhan bisnis dengan tenang.',
 };
 
 export default function RootLayout({ children }) {

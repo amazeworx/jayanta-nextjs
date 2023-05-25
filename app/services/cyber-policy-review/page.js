@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Layanan Review Kebijakan Keamanan Siber | Jayanta.id',
+  description:
+    'Layanan Review Kebijakan Keamanan Siber kami membantu Anda mengidentifikasi area kebijakan yang memerlukan perhatian, menyelaraskan kebijakan dengan praktik terbaik industri, dan memastikan kepatuhan terhadap standar dan regulasi yang relevan.',
+};
+
 export default function CyberPolicyReview() {
   const services = [
     {
@@ -34,44 +40,6 @@ export default function CyberPolicyReview() {
     },
   ];
 
-  const faqs = [
-    {
-      title: 'Mengapa pentest penting?',
-      description:
-        '<p>Pentest membantu mengidentifikasi kerentanan keamanan dalam infrastruktur TI sebelum peretas dapat mengeksploitasi celah tersebut. Dengan mengungkap dan memperbaiki kerentanan, pentest secara efektif meningkatkan keamanan sistem dan melindungi aset digital Anda dari ancaman keamanan siber.</p>',
-    },
-    {
-      title: 'Kapan sebaiknya melakukan pentest?',
-      description:
-        '<p>Pentest sebaiknya dilakukan secara berkala, atau setiap kali terjadi perubahan signifikan pada infrastruktur TI, seperti pengenalan sistem atau aplikasi baru, perubahan konfigurasi, atau setelah insiden keamanan. Selain itu, pentest mungkin diperlukan untuk memenuhi persyaratan kepatuhan industri atau regulasi.</p>',
-    },
-    {
-      title: 'Berapa lama waktu yang dibutuhkan untuk melakukan pentest?',
-      description:
-        '<p>Durasi pentest sangat bergantung pada lingkup pengujian, kompleksitas sistem atau aplikasi yang diuji, dan jenis pentest yang dilakukan. Pentest dapat berlangsung mulai dari beberapa hari hingga beberapa minggu.</p>',
-    },
-    {
-      title: 'Siapa yang harus melakukan pentest?',
-      description:
-        '<p>Pentest sebaiknya dilakukan oleh tim profesional dan berpengalaman yang memiliki pengetahuan dan keterampilan yang diperlukan untuk mengidentifikasi dan mengevaluasi kerentanan keamanan. Tim pentest mungkin termasuk konsultan eksternal, atau anggota tim keamanan internal yang telah melalui pelatihan khusus.</p>',
-    },
-    {
-      title: 'Apakah pentest akan mengganggu operasi bisnis?',
-      description:
-        '<p>Sebagian besar pentest dirancang untuk tidak mengganggu operasi bisnis. Namun, ada risiko kecil bahwa pengujian tertentu dapat menyebabkan gangguan atau downtime. Pentester dan klien biasanya akan bekerja sama untuk meminimalkan risiko ini dan merencanakan pengujian di luar jam kerja atau selama periode yang kurang sibuk.</p>',
-    },
-    {
-      title: 'Apa perbedaan antara pentest dan pemindaian kerentanan?',
-      description:
-        '<p>Pemindaian kerentanan adalah proses otomatis yang menggunakan alat untuk mengidentifikasi kerentanan yang diketahui dalam sistem, aplikasi, atau jaringan. Sementara itu, pentest melibatkan upaya yang lebih aktif dan manual untuk mengeksploitasi kerentanan yang ditemukan dan menilai dampak potensial dari eksploitasi tersebut.</p>',
-    },
-    {
-      title: 'Bagaimana cara memilih penyedia layanan pentest yang tepat?',
-      description:
-        '<p>Memilih penyedia layanan pentest yang tepat melibatkan pertimbangan seperti reputasi, pengalaman, kredensial industri (seperti sertifikasi), metodologi pengujian yang digunakan, dan kemampuan untuk bekerja sama dengan tim Anda dalam mengatasi kerentanan yang diidentifikasi.</p>',
-    },
-  ];
-
   return (
     <>
       <section className='relative pt-8 pb-8 xl:pt-24 xl:pb-16'>
@@ -96,7 +64,7 @@ export default function CyberPolicyReview() {
                   Seiring dengan perkembangan teknologi dan ancaman keamanan
                   siber yang terus berkembang, penting bagi organisasi untuk
                   secara berkala meninjau kebijakan keamanan siber mereka.
-                  Layanan Review Kebijakan Keamanan Siberkami membantu Anda
+                  Layanan Review Kebijakan Keamanan Siber kami membantu Anda
                   mengidentifikasi area kebijakan yang memerlukan perhatian,
                   menyelaraskan kebijakan dengan praktik terbaik industri, dan
                   memastikan kepatuhan terhadap standar dan regulasi yang
