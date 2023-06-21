@@ -232,10 +232,11 @@ export default function Navbar() {
       </div>
       <div className='hidden xl:flex'>
         <a
-          href='#'
+          href='https://wa.me/628161326163'
+          target='_blank'
           className='inline-block text-white bg-gradient-to-r from-red-600 to-blue-900 hover:from-red-600 hover:to-blue-500 focus:ring-4 focus:ring-indigo-700 font-medium rounded-lg text-lg px-8 py-2.5 focus:outline-none transition duration-300'
         >
-          Contact Us
+          Hubungi Kami
         </a>
       </div>
       <div className='flex-none xl:hidden -mr-2'>
