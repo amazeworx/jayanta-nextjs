@@ -35,6 +35,8 @@ export default function Footer() {
                 priority
               />
               <div className='text-white mt-4 text-lg'>
+                <strong>PT. Mitra Konsultansi Indonesia</strong>
+                <br />
                 TCC Batavia Tower One, Level 6<br />
                 Jl K.H Mas Mansyur Kav 126
                 <br />
