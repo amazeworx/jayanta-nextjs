@@ -17,7 +17,7 @@ export default function Home() {
     },
     {
       icon: '/images/icons/cyber-threat-intelligence.png',
-      title: 'Cyber Threat Intelligence (CIT)',
+      title: 'Cyber Threat Intelligence (CTI)',
       description:
         'Proses pengumpulan, analisis, dan berbagi informasi tentang ancaman siber untuk membantu organisasi dalam mengidentifikasi, memprioritaskan, dan merespon ancaman keamanan yang dihadapi.',
       link: '/services/cyber-threat-intelligence',
