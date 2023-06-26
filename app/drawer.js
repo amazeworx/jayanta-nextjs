@@ -148,6 +148,12 @@ export default function Drawer() {
                     >
                       Mobile DevSecOps
                     </a>
+                    <a
+                      href='/products/endpoint-protection-platform'
+                      className='px-4 py-2 rounded-lg hover:bg-brand-bluenight active:to-brand-bluenight transition duration-200'
+                    >
+                      Endpoint Protection Platform (EPP)
+                    </a>
                   </div>
                 </div>
               </div>
