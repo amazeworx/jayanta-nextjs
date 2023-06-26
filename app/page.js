@@ -114,7 +114,7 @@ export default function Home() {
       title: 'SentinelOne',
       description:
         'Platform Perlindungan Endpoint (EPP) yang inovatif, dirancang untuk melindungi organisasi Anda dari berbagai ancaman cyber. SentinelOne memberikan perlindungan real-time yang ditenagai oleh AI ke endpoint Anda',
-      link: '/products/mobile-devsecops',
+      link: '/products/endpoint-protection-platform',
     },
   ];
 
