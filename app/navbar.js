@@ -192,6 +192,14 @@ export default function Navbar() {
                 Mobile DevSecOps
               </a>
             </li>
+            <li>
+              <a
+                href='/products/endpoint-protection-platform'
+                className='whitespace-nowrap'
+              >
+                Endpoint Protection Platform (EPP)
+              </a>
+            </li>
           </ul>
         </div>
         <div className='dropdown'>
@@ -232,7 +240,7 @@ export default function Navbar() {
       </div>
       <div className='hidden xl:flex'>
         <a
-          href='https://wa.me/628161326163'
+          href='https://wa.me/6282117989898?text=Halo%20Tim%20Jayanta.ID%0A%0A'
           target='_blank'
           className='inline-block text-white bg-gradient-to-r from-red-600 to-blue-900 hover:from-red-600 hover:to-blue-500 focus:ring-4 focus:ring-indigo-700 font-medium rounded-lg text-lg px-8 py-2.5 focus:outline-none transition duration-300'
         >

@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
             <div className='text-center lg:text-left'>
               <a
-                href='https://wa.me/628161326163'
+                href='https://wa.me/6282117989898?text=Halo%20Tim%20Jayanta.ID%0A%0A'
                 target='_blank'
                 className='inline-block text-white bg-gradient-to-r from-red-600 to-blue-900 hover:from-red-600 hover:to-blue-500 focus:ring-4 focus:ring-indigo-700 font-medium rounded-lg text-xl px-10 py-4 mr-2 mb-2 focus:outline-none transition duration-300'
               >

@@ -109,6 +109,13 @@ export default function Home() {
         'Platform Mobile DevSecOps yang memungkinkan integrasi keamanan, mobilitas, dan fungsi lainnya ke dalam aplikasi seluler tanpa perlu mengubah kode sumber.',
       link: '/products/mobile-devsecops',
     },
+    {
+      icon: '/images/products/sentinelone.svg',
+      title: 'SentinelOne',
+      description:
+        'Platform Perlindungan Endpoint (EPP) yang inovatif, dirancang untuk melindungi organisasi Anda dari berbagai ancaman cyber. SentinelOne memberikan perlindungan real-time yang ditenagai oleh AI ke endpoint Anda',
+      link: '/products/mobile-devsecops',
+    },
   ];
 
   return (
@@ -204,7 +211,7 @@ export default function Home() {
             {products &&
               products.map((item, i) => (
                 <div
-                  className='py-2 md:p-2 lg:p-3 w-full md:w-1/2 lg:w-1/3 3xl:w-1/5'
+                  className='py-2 md:p-2 lg:p-3 w-full md:w-1/2 lg:w-1/3 3xl:w-1/3'
                   key={i}
                 >
                   <a
