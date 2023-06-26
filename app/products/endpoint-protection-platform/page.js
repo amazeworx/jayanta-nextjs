@@ -160,9 +160,10 @@ export default function Appdome() {
                   oleh AI ke endpoint Anda, menawarkan pendekatan multi-layer
                   terhadap keamanan cyber yang efektif melindungi dari ancaman
                   yang dikenal dan muncul. Pada tahun 2021, SentinelOne
-                  ditempatkan di kuadran "Pemimpin" dalam Magic Quadrant Gartner
-                  untuk Platform Perlindungan Endpoint, menandakan kemampuannya
-                  dalam eksekusi dan kelengkapan visinya.
+                  ditempatkan di kuadran &quot;Pemimpin&quot; dalam Magic
+                  Quadrant Gartner untuk Platform Perlindungan Endpoint,
+                  menandakan kemampuannya dalam eksekusi dan kelengkapan
+                  visinya.
                 </p>
               </div>
               <div className='w-1/2 order-1 mb-6 md:mb-0 md:w-1/4 lg:w-1/3 md:order-2'>
